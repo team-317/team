@@ -95,7 +95,7 @@
 	<header class="list__header">
 		<h2 class="list__title post__title">
 			<a href="/python%E7%AC%94%E8%AE%B0/queue%E7%9A%84putjoin%E5%92%8Ctask_one/" rel="bookmark">
-			`Queue`的`put`、`join`和`task_one`
+			Queue的put、join和task_one
 			</a>
 		</h2>
 		<div class="list__meta meta">
@@ -105,7 +105,7 @@
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Queue的put、join和task_one 在学习Queue时task_one时让我迷惑了很久，理清之后写下了这篇笔记。
+		Introduction to Go Templates 在学习Queue时task_one时让我迷惑了很久，理清之后写下了这篇笔记。
 python中的queue库提供了一个线程安全的类Queue，它和普通的队列一样具有先进先出的特点，不同的在于它对与空队列的处理。
 Queue对象使用get弹出队头的元素，使用put将元素插入队尾。Queue的源码并不长，在源码中Queue内部设置了条件变量，当队列为空而执行get操作时，该操作将会被阻塞；当队列满而执行put操作时，该操作同样会被阻塞。此外queue内部设置的队列是collections提供的deque，这是一个线程安全的双端队列，对它进行入队和出队操作都是原子操作，而Queue的get和put操作沿用了这一操作，所以Queue也是线程安全的，这使得Queue常用于多线程中。
 接下来转入正题。
@@ -114,7 +114,7 @@ Queue对象使用get弹出队头的元素，使用put将元素插入队尾。Que
 每执行一次task_one操作，unfinished_tasks就减一，可以把task_one放在get操作之后，当get成功执行后，在执行task_one使得unfinished_tasks减一，代表完成了一个任务；
 而join则通过判断unfinished_tasks是否为零执行wait操作；
 在python的官方文档中有关于task_one的代码样例，我在样例的基础上增加了关于unfinished_tasks的注释，以便读者理解：
-import threading, queue q = queue.Queue() def worker(): while True: item = q.get() print(f&#39;Working on {item}&#39;) print(f&#39;Finished {item}&#39;) q.task_done()	# unfinished_tasks += 1 # turn-on the worker thread threading.Thread(target=worker, daemon=True).start() # send thirty task requests to the worker for item in range(30): q.put(item)	# unfinished_tasks -= 1 print(&#39;All task requests sent\n&#39;, end=&#39;&#39;) # block until all tasks are done q.join() # if unfinished_tasks !
+import threading, queue q = queue.Queue() def worker(): while True: item = q.get() print(f&#39;Working on {item}&#39;) print(f&#39;Finished {item}&#39;) q.task_done()	# unfinished_tasks += 1 # turn-on the worker thread threading.Thread(target=worker, daemon=True).start() # send thirty task requests to the worker for item in range(30): q.put(item)	# unfinished_tasks -= 1 print(&#39;All task requests sent\n&#39;, end=&#39;&#39;) # block until all tasks are done q.
 	</div>
 </article>
 </main>

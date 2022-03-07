@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>`Queue`的`put`、`join`和`task_one` - Mainroad</title>
+	<title>Queue的put、join和task_one - Mainroad</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="使用Queue实现多线程，并通过join和task_one完成同步">
-		<meta property="og:title" content="`Queue`的`put`、`join`和`task_one`" />
+		<meta property="og:title" content="Queue的put、join和task_one" />
 <meta property="og:description" content="使用Queue实现多线程，并通过join和task_one完成同步" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/python%E7%AC%94%E8%AE%B0/queue%E7%9A%84putjoin%E5%92%8Ctask_one/" /><meta property="article:section" content="python笔记" />
@@ -91,7 +91,7 @@
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">`Queue`的`put`、`join`和`task_one`</h1>
+			<h1 class="post__title">Queue的put、join和task_one</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-03-07T00:00:00Z">March 07, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/python%E7%AC%94%E8%AE%B0/" rel="category">Python笔记</a>
@@ -99,16 +99,16 @@
 </div></div>
 		</header>
 		<div class="content post__content clearfix">
-			<h2 id="queue的putjoin和task_one"><code>Queue</code>的<code>put</code>、<code>join</code>和<code>task_one</code></h2>
-<p>在学习<code>Queue</code>时<code>task_one</code>时让我迷惑了很久，理清之后写下了这篇笔记。</p>
-<p><code>python</code>中的<code>queue</code>库提供了一个线程安全的类<code>Queue</code>，它和普通的队列一样具有先进先出的特点，不同的在于它对与空队列的处理。</p>
-<p><code>Queue</code>对象使用<code>get</code>弹出队头的元素，使用<code>put</code>将元素插入队尾。<code>Queue</code>的源码并不长，在源码中<code>Queue</code>内部设置了条件变量，当队列为空而执行<code>get</code>操作时，该操作将会被阻塞；当队列满而执行<code>put</code>操作时，该操作同样会被阻塞。此外<code>queue</code>内部设置的队列是<code>collections</code>提供的<code>deque</code>，这是一个线程安全的双端队列，对它进行入队和出队操作都是原子操作，而<code>Queue</code>的<code>get</code>和<code>put</code>操作沿用了这一操作，所以<code>Queue</code>也是线程安全的，这使得<code>Queue</code>常用于多线程中。</p>
+			<h2 id="introduction-to-go-templates">Introduction to Go Templates</h2>
+<p>在学习<strong>Queue</strong>时<strong>task_one</strong>时让我迷惑了很久，理清之后写下了这篇笔记。</p>
+<p><strong>python</strong>中的<strong>queue</strong>库提供了一个线程安全的类<strong>Queue</strong>，它和普通的队列一样具有先进先出的特点，不同的在于它对与空队列的处理。</p>
+<p><strong>Queue</strong>对象使用<strong>get</strong>弹出队头的元素，使用<strong>put</strong>将元素插入队尾。<strong>Queue</strong>的源码并不长，在源码中<strong>Queue</strong>内部设置了条件变量，当队列为空而执行<strong>get</strong>操作时，该操作将会被阻塞；当队列满而执行<strong>put</strong>操作时，该操作同样会被阻塞。此外<strong>queue</strong>内部设置的队列是<strong>collections</strong>提供的<strong>deque</strong>，这是一个线程安全的双端队列，对它进行入队和出队操作都是原子操作，而<strong>Queue</strong>的<strong>get</strong>和<strong>put</strong>操作沿用了这一操作，所以<strong>Queue</strong>也是线程安全的，这使得<strong>Queue</strong>常用于多线程中。</p>
 <p>接下来转入正题。</p>
-<p>要理解<code>task_one</code>，就需要理解与<code>put</code>、<code>join</code>、<code>task_one</code>三个操作都相关的内部属性<code>unfinished_tasks</code>。</p>
-<p>每当执行一次<code>put</code>操作，<code>unfinished_tasks</code>就加一，可理解为<code>put</code>代表增加了一个任务；</p>
-<p>每执行一次<code>task_one</code>操作，<code>unfinished_tasks</code>就减一，可以把<code>task_one</code>放在<code>get</code>操作之后，当<code>get</code>成功执行后，在执行<code>task_one</code>使得<code>unfinished_tasks</code>减一，代表完成了一个任务；</p>
-<p>而<code>join</code>则通过判断<code>unfinished_tasks</code>是否为零执行<code>wait</code>操作；</p>
-<p>在<code>python</code>的官方文档中有关于<code>task_one</code>的代码样例，我在样例的基础上增加了关于<code>unfinished_tasks</code>的注释，以便读者理解：</p>
+<p>要理解<strong>task_one</strong>，就需要理解与<strong>put</strong>、<strong>join</strong>、<strong>task_one</strong>三个操作都相关的内部属性<strong>unfinished_tasks</strong>。</p>
+<p>每当执行一次<strong>put</strong>操作，<strong>unfinished_tasks</strong>就加一，可理解为<strong>put</strong>代表增加了一个任务；</p>
+<p>每执行一次<strong>task_one</strong>操作，<strong>unfinished_tasks</strong>就减一，可以把<strong>task_one</strong>放在<strong>get</strong>操作之后，当<strong>get</strong>成功执行后，在执行<strong>task_one</strong>使得<strong>unfinished_tasks</strong>减一，代表完成了一个任务；</p>
+<p>而<strong>join</strong>则通过判断<strong>unfinished_tasks</strong>是否为零执行<strong>wait</strong>操作；</p>
+<p>在<strong>python</strong>的官方文档中有关于<strong>task_one</strong>的代码样例，我在样例的基础上增加了关于<strong>unfinished_tasks</strong>的注释，以便读者理解：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> threading<span style="color:#f92672">,</span> queue
 
 q <span style="color:#f92672">=</span> queue<span style="color:#f92672">.</span>Queue()
@@ -131,10 +131,10 @@ print(<span style="color:#e6db74">&#39;All task requests sent</span><span style=
 <span style="color:#75715e"># block until all tasks are done</span>
 q<span style="color:#f92672">.</span>join() <span style="color:#75715e"># if unfinished_tasks != 0: wait()</span>
 print(<span style="color:#e6db74">&#39;All work completed&#39;</span>)
-</code></pre></div><p>这里有一点要注意，由于<code>put</code>操作位于主线程中，所以在<code>q.join()</code>之前一定会完成30次<code>put</code>操作，与此同时子线程会执行<code>get</code>操作和<code>task_one</code>操作，所以在执行<code>q.join</code>之前可能有两种情况：</p>
-<p><code>case1</code>: 主线程先完成30次<code>put</code>，使得<code>unfinished_tasks</code>&gt;0，于是主线程在<code>q.join()</code>处阻塞；</p>
-<p><code>case2</code>: 子线程执行<code>get</code>操作比主线程快，随后执行的<code>task_done</code>使得<code>unfinished_tasks</code>在30次<code>put</code>操作之前变为0（如果在这种情况下执行<code>q.join</code>，则不会发生阻塞），此时队列为空，子线程执行<code>get</code>操作后被阻塞，当主线程再次完成一次<code>put</code>操作后子线程解除阻塞继续执行，如此循环。</p>
-<p>最后还有一点，<code>worker</code>是一个死循环，所以当主线程结束后，子线程其实并不会结束，它依然会继续存在。但由于队列为空，所以它会一直阻塞在<code>get</code>操作中。</p>
+</code></pre></div><p>这里有一点要注意，由于<strong>put</strong>操作位于主线程中，所以在<code>q.join()</code>之前一定会完成30次<strong>put</strong>操作，与此同时子线程会执行<strong>get</strong>操作和<strong>task_one</strong>操作，所以在执行<code>q.join</code>之前可能有两种情况：</p>
+<p><strong>case1</strong>: 主线程先完成30次<strong>put</strong>，使得<strong>unfinished_tasks</strong>&gt;0，于是主线程在<code>q.join()</code>处阻塞；</p>
+<p><strong>case2</strong>: 子线程执行<strong>get</strong>操作比主线程快，随后执行的<strong>task_done</strong>使得<strong>unfinished_tasks</strong>在30次<strong>put</strong>操作之前变为0（如果在这种情况下执行<code>q.join</code>，则不会发生阻塞），此时队列为空，子线程执行<strong>get</strong>操作后被阻塞，当主线程再次完成一次<strong>put</strong>操作后子线程解除阻塞继续执行，如此循环。</p>
+<p>最后还有一点，<strong>worker</strong>是一个死循环，所以当主线程结束后，子线程其实并不会结束，它依然会继续存在。但由于队列为空，所以它会一直阻塞在<strong>get</strong>操作中。</p>
 
 		</div>
 		<footer class="post__footer">
