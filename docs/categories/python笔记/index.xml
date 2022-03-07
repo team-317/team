@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python笔记 on Mainroad</title>
+    <link>/categories/python%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in Python笔记 on Mainroad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/categories/python%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>`Queue`的`put`、`join`和`task_one`</title>
+      <link>/python%E7%AC%94%E8%AE%B0/queue%E7%9A%84putjoin%E5%92%8Ctask_one/</link>
+      <pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/python%E7%AC%94%E8%AE%B0/queue%E7%9A%84putjoin%E5%92%8Ctask_one/</guid>
+      <description>Queue的put、join和task_one 在学习Queue时task_one时让我迷惑了很久，理清之后写下了这篇笔记。
+python中的queue库提供了一个线程安全的类Queue，它和普通的队列一样具有先进先出的特点，不同的在于它对与空队列的处理。
+Queue对象使用get弹出队头的元素，使用put将元素插入队尾。Queue的源码并不长，在源码中Queue内部设置了条件变量，当队列为空而执行get操作时，该操作将会被阻塞；当队列满而执行put操作时，该操作同样会被阻塞。此外queue内部设置的队列是collections提供的deque，这是一个线程安全的双端队列，对它进行入队和出队操作都是原子操作，而Queue的get和put操作沿用了这一操作，所以Queue也是线程安全的，这使得Queue常用于多线程中。
+接下来转入正题。
+要理解task_one，就需要理解与put、join、task_one三个操作都相关的内部属性unfinished_tasks。
+每当执行一次put操作，unfinished_tasks就加一，可理解为put代表增加了一个任务；
+每执行一次task_one操作，unfinished_tasks就减一，可以把task_one放在get操作之后，当get成功执行后，在执行task_one使得unfinished_tasks减一，代表完成了一个任务；
+而join则通过判断unfinished_tasks是否为零执行wait操作；
+在python的官方文档中有关于task_one的代码样例，我在样例的基础上增加了关于unfinished_tasks的注释，以便读者理解：
+import threading, queue q = queue.Queue() def worker(): while True: item = q.get() print(f&amp;#39;Working on {item}&amp;#39;) print(f&amp;#39;Finished {item}&amp;#39;) q.task_done()	# unfinished_tasks += 1 # turn-on the worker thread threading.Thread(target=worker, daemon=True).start() # send thirty task requests to the worker for item in range(30): q.put(item)	# unfinished_tasks -= 1 print(&amp;#39;All task requests sent\n&amp;#39;, end=&amp;#39;&amp;#39;) # block until all tasks are done q.join() # if unfinished_tasks !</description>
+    </item>
+    
+  </channel>
+</rss>
