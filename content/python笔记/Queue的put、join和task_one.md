@@ -1,7 +1,7 @@
 ---
-title: `Queue`的`put`、`join`和`task_one`
+title: "`Queue`的`put`、`join`和`task_one`"
 description: 使用Queue实现多线程，并通过join和task_one完成同步
-date: 2022-3-7
+date: 2022-03-07
 categories:
   - "Python笔记"
 tags:
