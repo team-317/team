@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>C语言宏操作 - Mainroad</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="C语言宏操作" />
+<meta property="og:description" content="编译和宏
+编译可分为两个阶段：编译和链接
+step1:编译阶段进行语法检查
+step2:链接阶段将各个相互关联的模块拼接在一起" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/c%E8%AF%AD%E8%A8%80%E5%AE%8F%E6%93%8D%E4%BD%9C/" /><meta property="article:section" content="C语言笔记" />
+<meta property="article:published_time" content="2021-05-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-05-19T00:00:00+00:00" />
+
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Mainroad" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Mainroad</div>
+					<div class="logo__tagline">Just another site</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/docs/getting-started/">
+				
+				<span class="menu__text">Getting started</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/docs/customization/">
+				
+				<span class="menu__text">Customization</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/docs/faq/">
+				
+				<span class="menu__text">FAQ</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/basic-elements/">
+				
+				<span class="menu__text">Basic Elements</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">C语言宏操作</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-05-19T00:00:00Z">May 19, 2021</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/" rel="category">C语言笔记</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<h2 id="编译和宏">编译和宏</h2>
+<p>编译可分为两个阶段：编译和链接</p>
+<p>step1:编译阶段进行语法检查</p>
+<p>step2:链接阶段将各个相互关联的模块拼接在一起</p>
+<h3 id="编译阶段">编译阶段</h3>
+<p>编译指令：<code>g++ -c xxx.cpp</code></p>
+<p>在编译阶段通过之后会生成后缀为<code>.o</code>的中间文件；通过命令<code>nm -C xxx.o</code>可以查看该文件的内容；</p>
+<p>**例：**编译并查看一下compile_test.o文件的内容</p>
+<p><code>compile_test.cpp</code>的内容如下</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">add</span>(<span style="color:#66d9ef">int</span> a, <span style="color:#66d9ef">int</span> b){
+    <span style="color:#66d9ef">return</span> a<span style="color:#f92672">+</span>b;
+}
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+    printf(<span style="color:#e6db74">&#34;Hello world!&#34;</span>);
+    printf(<span style="color:#e6db74">&#34;The value of 3+4 is %d.&#34;</span>, add(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>));
+    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+}
+</code></pre></div><p>通过执行上面提到的两条代码，中间结果如下：<img src="https://img-blog.csdnimg.cn/img_convert/08159e7cfd8cda3e8817960fc5addf9d.png" alt="image-20210519181124259"></p>
+<p>需要关注的是下面这个方框，其中T标志表示当前文件的模块，U标志表示需要链接的模块；显然add函数是当前文件的，无需链接，但printf函数是系统定义的，需要到系统库中找到printf的声明和定义并进行链接。</p>
+<h3 id="预处理语句宏定义">预处理语句——宏定义</h3>
+<h4 id="宏的类型">宏的类型</h4>
+<ul>
+<li>
+<p>宏有三种类型：</p>
+<ul>
+<li>
+<p>定义符号常量  <code>#define PI 3.1415926</code></p>
+</li>
+<li>
+<p>定义宏表达式  <code>#define ADD(a,b)  a+b</code></p>
+</li>
+<li>
+<p>定义代码片段</p>
+<pre tabindex="0"><code>#define HELLO(msg){	\
+	printf(&quot;%s&quot;,msg);	\
+}
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<h4 id="宏的处理和作用">宏的处理和作用</h4>
+<p>对宏的理解，宏是预处理语句，也就是说<strong>它是在编译的时候发挥作用</strong>的，它的作用是什么呢？宏的格式为<code>#define 标识符 替换内容</code>，宏作用就是<strong>将宏标识符更改为替换内容</strong>。</p>
+<h4 id="插曲彩色文字">插曲：彩色文字!</h4>
+<p>文字在显示时可以分为三部分：<code>字形码，前景色、背景色</code>；</p>
+<p>在C语言中，printf其实是可以设置文字的样式的，在打印内容之前插入：<code>\033[a,b,cm</code>可以设置打印文字的显示效果，其中a，b，c是三个控制编号，见下图</p>
+<!-- raw HTML omitted -->
+<p>有了这种配置方式就可以打印彩色文字了，例如：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">printf(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[1,32,40mHello world!&#34;</span>);
+</code></pre></div><p>为防止先前的设置影响后面输出的文字，一般在结尾会重置所有属性，如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">printf(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[1,34,40mColorful words!</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[0m&#34;</span>);
+</code></pre></div><h3 id="宏的使用">宏的使用</h3>
+<h4 id="宏的妙用用宏设置文字属性">宏的妙用①——用宏设置文字属性</h4>
+<p>由于宏具有替换的功能，所以可以像处理字符串的连接操作一样来拼接代码，上面对文字颜色的设置可以用宏来完成：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">// 宏定义
+</span><span style="color:#75715e"></span><span style="color:#75715e">#define RED(msg)    &#34;\033[0;31m&#34; msg &#34;\033[0m&#34;
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// 使用方式
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+    printf(RED(<span style="color:#e6db74">&#34;Hello World!&#34;</span>));
+    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+}
+</code></pre></div><p>对于打印语句，在VSCode中有如下提示：</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/7f10f6859ceafb6cca3c33ecd5586359.png" alt="image-20210519194743580"></p>
+<p>RED(&ldquo;Hello world&rdquo;)被扩展为<code>&quot;\033[0;31m&quot; &quot;Hello World!&quot; &quot;\033[0m&quot;</code>；所以这条语句等价于<code>printf(&quot;\033[1,32,40mHello world!&quot;);</code></p>
+<h4 id="宏的妙用替换代码段比较操作">宏的妙用②——替换代码段：比较操作</h4>
+<p>上面的<code>RED</code>是一个宏表达式，但它还没有完全展示宏的作用，宏代码段能够替换代码段，这更能展现宏的作用：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">// 相等判断
+</span><span style="color:#75715e"></span><span style="color:#75715e">#define EXPECT_EQ(a,b){    \
+</span><span style="color:#75715e">    if(!((a) == (b))){  \
+</span><span style="color:#75715e">        printf(&#34;Error\n&#34;);  \
+</span><span style="color:#75715e">    }   \
+</span><span style="color:#75715e">}
+</span><span style="color:#75715e"></span><span style="color:#75715e">//使用方式
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+    EXPECT_EQ(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>);
+    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+}
+</code></pre></div><p>同样的看一下VSCode对宏的扩展：</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/ddbd97c00d897c5fdaa7fc0cd544ce55.png" alt="image-20210519201725997"></p>
+<p>注意外围的花括号，这个括号不是必须的，<strong>使用花括号括起来后宏中定义的变量为局部变量</strong>。</p>
+<h4 id="宏的妙用嵌套替换">宏的妙用③——嵌套替换</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">// 比较判断
+</span><span style="color:#75715e"></span><span style="color:#75715e">#define EXPECT(a, comp, b){    \
+</span><span style="color:#75715e">    if(!((a) comp (b))){  \
+</span><span style="color:#75715e">        printf(&#34;Error\n&#34;);  \
+</span><span style="color:#75715e">    }   \
+</span><span style="color:#75715e">}
+</span><span style="color:#75715e"></span><span style="color:#75715e">// 大于等于判断
+</span><span style="color:#75715e"></span><span style="color:#75715e">#define EXPECT_LE(a,b)  EXPECT(a, &gt;=, b)
+</span><span style="color:#75715e"></span><span style="color:#75715e">// 不等判断
+</span><span style="color:#75715e"></span><span style="color:#75715e">#define EXPECT_NE(a,b)  EXPECT(a, !=, b)
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// 使用方式
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+    EXPECT_LE(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">9</span>);
+    EXPECT_NE(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">9</span>);
+    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+}
+</code></pre></div><p>VSCode中对宏的提示如下：</p>
+<!-- raw HTML omitted -->
+<p><code>EXPECT_LE</code>中使用了<code>EXPECT</code>，当宏进行替换时，<code>EXPECT_LE</code>就会替换为下面的代码段：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>((a) <span style="color:#f92672">&gt;=</span> (b))){
+    printf(<span style="color:#e6db74">&#34;Error</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+}
+</code></pre></div><p>很奇妙的是，在<code>EXPECT_LE</code>传给<code>EXPECT</code>的参数comp为<code>&gt;=</code>，注意这不是字符串，所以可以看出，宏替换是很朴素的替换，它不会对传入的内容做任何处理，上面的代码<code>EXPECT_LE(1,9);</code>在mian中也可直接写作<code>EXPECT(1,&gt;=,9);</code></p>
+<p>之所以要加一层嵌套是为了提高代码的复用性，<strong>不用EXPECT的话，EXPECT_LE和EXPECT_NE这两个宏除了比较符号不同，其他的内容都相同，有很大的相似度</strong>。</p>
+<h4 id="宏的运用函数测试">宏的运用——函数测试</h4>
+<p>在leetcode中，给定的算法题都有测试用例，其实用宏也可以完成测试功能，这里举个简单的例子来说明：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">#define COMP(a,b)\
+</span><span style="color:#75715e">int result; \
+</span><span style="color:#75715e">result = a+b;
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">#define TEST(ADD, val){ \
+</span><span style="color:#75715e">    ADD    \
+</span><span style="color:#75715e">    if(result == val){  \
+</span><span style="color:#75715e">        printf(&#34;get a correct result!&#34;);    \
+</span><span style="color:#75715e">    }   \
+</span><span style="color:#75715e">}
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">/* 用宏进行函数测试 */</span>
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+    <span style="color:#66d9ef">int</span> a<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>, b <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>;
+    TEST(COMP(a,b),<span style="color:#ae81ff">7</span>);
+}
+</code></pre></div><p>注意，在定义宏<code>COMP</code>时外围没有使用花括号，<strong>只要宏之后有换行符&quot;\&quot;，那么这个宏就没有结束，就可以继续在后面添加语句</strong>。在编译器看来，<strong>宏其实是一行代码，里面可以包含多条代码</strong>，对TEST进行宏展开效果如下：</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/0e053822956c4373fcc83b2a234026b7.png" alt="image-20210521093530715"></p>
+<p>这样就能完成一个简单的测试了。</p>
+<h3 id="小结">小结</h3>
+<p>宏在C中起到的是替换作用，需要注意的是，这个替换过程是在预处理阶段完成的，预处理阶段还没开始进行编译，当预处理完所有宏都被替换为具体的内容之后才开始编译。</p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/c/" rel="tag">C</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Team317 avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Team317</span>
+	</div>
+	<div class="authorbox__description">
+		John Doe&rsquo;s true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it.
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/%E7%94%A8c%E5%88%9B%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%96%87%E4%BB%B6/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">用C创建记录型文件</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://duckduckgo.com/">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sites" value=""/>
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/docs/getting-started/">Getting started</a></li>
+			<li class="widget__item"><a class="widget__link" href="/docs/customization/">Customization</a></li>
+			<li class="widget__item"><a class="widget__link" href="/docs/faq/">Frequently asked questions (FAQ)</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/basic-elements/">Basic HTML Elements</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/hugo-template-primer/">(Hu)go Template Primer</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/c&#43;&#43;/">C&#43;&#43;</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/">C语言笔记</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/golang/">golang</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/htmlcssjs/">html&amp;css&amp;js</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/python%E7%AC%94%E8%AE%B0/">python笔记</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/">数据处理</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/">编程散记</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/basic-elements/" title="Basic Elements">Basic Elements</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/c/" title="C">C</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/c&#43;&#43;/" title="C&#43;&#43;">C&#43;&#43;</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/css/" title="CSS">CSS</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="development">development</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/go/" title="go">go</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/golang/" title="golang">golang</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/html/" title="html">html</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/installation/" title="Installation">Installation</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/json/" title="json">json</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="linux">linux</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mysql/" title="mysql">mysql</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="python">python</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/templates/" title="templates">templates</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/themes/" title="themes">themes</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/" title="位运算">位运算</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98/" title="动态内存">动态内存</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" title="多线程">多线程</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="正则表达式">正则表达式</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%B1%87%E7%BC%96/" title="汇编">汇编</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E7%88%AC%E8%99%AB/" title="爬虫">爬虫</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E7%BD%91%E7%BB%9C/" title="网络">网络</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" title="虚拟机">虚拟机</a>
+	</div>
+</div>
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/Tom-DaLin" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Email" href="mailto:2629757717@qq.com">
+				<svg class="widget-social__link-icon icon icon-mail" width="24" height="24" viewBox="0 0 416 288"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg>
+				<span>2629757717@qq.com</span>
+			</a>
+		</div>
+
+		
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="CSDN" rel="noopener noreferrer" href="" target="_blank">
+				<span>CSDN</span>
+			</a>
+		</div>
+		
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Mainroad.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

@@ -7,7 +7,7 @@ disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [Author]
-  name = "John Doe"
+  name = "Team317"
   bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
   avatar = "img/avatar.png"
 
@@ -29,8 +29,21 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   list = "right"   # Configure layout for list pages
   single = "right" # Configure layout for single pages
   # Enable widgets in given order
-  widgets = ["search", "recent", "categories", "taglist"]
+  widgets = ["ddg-search", "recent", "categories", "taglist", "social", "languages"]
+
+
 
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget
-  tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
+  categories_counter = false # Enable counter for each category in "Categories" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget
+
+
+[Params.widgets.social]
+  # Enable parts of social widget
+  github = "Tom-DaLin"
+  email = "2629757717@qq.com"
+
+[[Params.widgets.social.custom]]
+  title = "CSDN"
+  url = ""

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>虚拟机 on Mainroad</title>
+    <link>/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
+    <description>Recent content in 虚拟机 on Mainroad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>虚拟机读取映像文件</title>
+      <link>/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AF%BB%E5%8F%96%E6%98%A0%E5%83%8F%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AF%BB%E5%8F%96%E6%98%A0%E5%83%8F%E6%96%87%E4%BB%B6/</guid>
+      <description>&lt;p&gt;在使用VMware Player的时候，启动虚拟机时会出现下面的错误：
+&lt;img src=&#34;https://img-blog.csdnimg.cn/20210607083335996.png&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

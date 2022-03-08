@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>爬虫 on Mainroad</title>
+    <link>/tags/%E7%88%AC%E8%99%AB/</link>
+    <description>Recent content in 爬虫 on Mainroad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E7%88%AC%E8%99%AB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E8%99%AB%E8%AE%BE%E7%BD%AE%E6%89%8B%E6%9C%BA%E4%BB%A3%E7%90%86/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E8%99%AB%E8%AE%BE%E7%BD%AE%E6%89%8B%E6%9C%BA%E4%BB%A3%E7%90%86/</guid>
+      <description>&lt;p&gt;@[toc]&lt;/p&gt;
+&lt;h3 id=&#34;mitmproxy的安装&#34;&gt;mitmproxy的安装&lt;/h3&gt;
+&lt;p&gt;如果安装了anaconda，则在终端执行下面这条命令&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;pip install mitmproxy
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>知乎热榜爬取</title>
+      <link>/python%E7%AC%94%E8%AE%B0/%E7%9F%A5%E4%B9%8E%E7%83%AD%E6%A6%9C%E7%88%AC%E5%8F%96/</link>
+      <pubDate>Fri, 30 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/python%E7%AC%94%E8%AE%B0/%E7%9F%A5%E4%B9%8E%E7%83%AD%E6%A6%9C%E7%88%AC%E5%8F%96/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;任务概述&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这次的任务是定时的爬取知乎热榜前十的标题，如果当前爬取的热榜较上一次有所变动，则将新增的标题打印出来。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

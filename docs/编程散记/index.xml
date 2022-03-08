@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编程散记s on Mainroad</title>
+    <link>/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/</link>
+    <description>Recent content in 编程散记s on Mainroad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ubuntu命令简记</title>
+      <link>/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/ubuntu%E5%91%BD%E4%BB%A4%E7%AE%80%E8%AE%B0/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/ubuntu%E5%91%BD%E4%BB%A4%E7%AE%80%E8%AE%B0/</guid>
+      <description>&lt;p&gt;以下内容仅为一次学习记录&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;history&lt;/code&gt;    显示在该终端使用过的所有命令；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;history |grep sudo*&lt;/code&gt;   显示在该终端中使用过且包含字符“sudo”的所有命令；&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>虚拟机读取映像文件</title>
+      <link>/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AF%BB%E5%8F%96%E6%98%A0%E5%83%8F%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AF%BB%E5%8F%96%E6%98%A0%E5%83%8F%E6%96%87%E4%BB%B6/</guid>
+      <description>&lt;p&gt;在使用VMware Player的时候，启动虚拟机时会出现下面的错误：
+&lt;img src=&#34;https://img-blog.csdnimg.cn/20210607083335996.png&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>汇编复制指定段</title>
+      <link>/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E6%B1%87%E7%BC%96%E5%A4%8D%E5%88%B6%E6%8C%87%E4%BB%A4%E6%AE%B5/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E6%B1%87%E7%BC%96%E5%A4%8D%E5%88%B6%E6%8C%87%E4%BB%A4%E6%AE%B5/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;问题概述&lt;/strong&gt;
+下面的程序的功能是将“mov ax,4c00h”之前的指令复制到内存0:200处,补全程序。上机调试,跟踪运行结果。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

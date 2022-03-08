@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>算法 on Mainroad</title>
+    <link>/categories/%E7%AE%97%E6%B3%95/</link>
+    <description>Recent content in 算法 on Mainroad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/categories/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>计数二进制中1的位数</title>
+      <link>/%E7%AE%97%E6%B3%95/%E8%AE%A1%E6%95%B0%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E4%BD%8D%E6%95%B0/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%AE%97%E6%B3%95/%E8%AE%A1%E6%95%B0%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E4%BD%8D%E6%95%B0/</guid>
+      <description>&lt;p&gt;​&lt;/p&gt;
+&lt;p&gt;问题：从键盘上输入一个二进制数，统计其中1的位数并输出统计结果&lt;/p&gt;
+&lt;p&gt;C++实现过程中的关键：从键盘上得到的数据依变量类型存储为相应的类型，如果将输入类型定义为整型，则在读取中只会按十进制形式进行存储，如输入二进制数，读取到十进制变量中将变成所以用整型变量存储回使数据信息改变，在C++中，可以用字符串存储，定义一个string对象，用字符的方式处理。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

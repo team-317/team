@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>用pymysql操作mysql - Mainroad</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="用pymysql操作mysql" />
+<meta property="og:description" content="在python中使用pymysql操作mysql数据库，代码和注释如下：" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/python%E7%AC%94%E8%AE%B0/%E7%94%A8pymysql%E6%93%8D%E4%BD%9Cmysql/" /><meta property="article:section" content="python笔记" />
+<meta property="article:published_time" content="2021-05-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-05-01T00:00:00+00:00" />
+
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Mainroad" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Mainroad</div>
+					<div class="logo__tagline">Just another site</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/docs/getting-started/">
+				
+				<span class="menu__text">Getting started</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/docs/customization/">
+				
+				<span class="menu__text">Customization</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/docs/faq/">
+				
+				<span class="menu__text">FAQ</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/basic-elements/">
+				
+				<span class="menu__text">Basic Elements</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">用pymysql操作mysql</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-05-01T00:00:00Z">May 01, 2021</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/python%E7%AC%94%E8%AE%B0/" rel="category">python笔记</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p>在python中使用pymysql操作mysql数据库，代码和注释如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># -*- coding: utf-8 -*-</span>
+<span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">Created on Fri Apr 30 20:00:40 2021
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">@author: Team317
+</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+
+<span style="color:#f92672">import</span> pymysql
+<span style="color:#e6db74">&#39;&#39;&#39;
+</span><span style="color:#e6db74">pymysql提供的功能已经能比较好的完成数据库操作任务了，
+</span><span style="color:#e6db74">这里进一步将其简化，只需要提供数据，调用类中的函数就能完成任务，
+</span><span style="color:#e6db74">省去了写sql语句的步骤，更具便捷
+</span><span style="color:#e6db74">类中的每一个功能都可以拆分出来，根据需要可提取代码段
+</span><span style="color:#e6db74">&#39;&#39;&#39;</span>
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">mysql</span>():
+<span style="color:#75715e">## 初始化获得游标cursor，游标是关键</span>
+    <span style="color:#66d9ef">def</span> __init__(self,host,user,password,port,db<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>):
+        <span style="color:#66d9ef">if</span> db <span style="color:#f92672">==</span> <span style="color:#66d9ef">None</span>:
+            self<span style="color:#f92672">.</span>db <span style="color:#f92672">=</span> pymysql<span style="color:#f92672">.</span>connect(host <span style="color:#f92672">=</span> host, user <span style="color:#f92672">=</span> user, password<span style="color:#f92672">=</span>password, port <span style="color:#f92672">=</span>port)
+        <span style="color:#66d9ef">else</span>:
+            self<span style="color:#f92672">.</span>db <span style="color:#f92672">=</span> pymysql<span style="color:#f92672">.</span>connect(host <span style="color:#f92672">=</span> host, user <span style="color:#f92672">=</span> user, password<span style="color:#f92672">=</span>password, port <span style="color:#f92672">=</span>port,db<span style="color:#f92672">=</span>db)
+        <span style="color:#75715e"># 数据库游标是必不可少的，就像文件指针一样</span>
+        self<span style="color:#f92672">.</span>cursor <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>db<span style="color:#f92672">.</span>cursor()
+        <span style="color:#75715e"># 下面的这些信息在create_a_db()中可能用得上</span>
+        self<span style="color:#f92672">.</span>host <span style="color:#f92672">=</span> host
+        self<span style="color:#f92672">.</span>user <span style="color:#f92672">=</span> user
+        self<span style="color:#f92672">.</span>password <span style="color:#f92672">=</span> password
+        self<span style="color:#f92672">.</span>port <span style="color:#f92672">=</span> port
+        
+<span style="color:#75715e">## 检查数据库版本        </span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">check_version</span>(self):
+        self<span style="color:#f92672">.</span>cursor<span style="color:#f92672">.</span>execute(<span style="color:#e6db74">&#39;select version()&#39;</span>)
+        data <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>cursor<span style="color:#f92672">.</span>fetchone()
+        print(<span style="color:#e6db74">&#39;DB version:&#39;</span>,data)
+        
+<span style="color:#75715e">## 创建数据库操作 </span>
+    <span style="color:#75715e"># 创建一个数据库，名字为spiders</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_a_db</span>(self,db):
+        <span style="color:#75715e"># connect中可以不传入db参数(数据库名称)</span>
+        self<span style="color:#f92672">.</span>cursor<span style="color:#f92672">.</span>execute(<span style="color:#e6db74">&#34;create database </span><span style="color:#e6db74">{db}</span><span style="color:#e6db74"> default character set utf8&#34;</span><span style="color:#f92672">.</span>format(db<span style="color:#f92672">=</span>db))
+        self<span style="color:#f92672">.</span>db <span style="color:#f92672">=</span> pymysql<span style="color:#f92672">.</span>connect(host <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>host, user <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>user, password<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>password, port <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>port, db<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>db)
+
+
+<span style="color:#75715e">## 创建表格操作</span>
+    <span style="color:#75715e"># 在数据库中新建一个表，测试为students</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_a_table</span>(self):
+        <span style="color:#75715e"># 需向connect中传入db参数，指明在哪个数据库中创建表格</span>
+        <span style="color:#75715e"># 创建一个表格</span>
+        sql <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;create table if not exists students (id varchar(255) not null, name varchar(255) not null, </span><span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span><span style="color:#e6db74">                age int not null, primary key (id))&#39;</span>
+        self<span style="color:#f92672">.</span>cursor<span style="color:#f92672">.</span>execute(sql)
+    
+<span style="color:#75715e">## 插入操作</span>
+    <span style="color:#75715e"># 向students中插入数据</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_info</span>(self,db,id,user,age):
+        sql <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;insert into students(id,name,age)values(</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">,</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">,</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">)&#39;</span>
+        <span style="color:#66d9ef">try</span>:
+            self<span style="color:#f92672">.</span>cursor<span style="color:#f92672">.</span>execute(sql, (id,user,age))
+            <span style="color:#75715e"># 执行commit让数据同步到数据库，就像git一样</span>
+            self<span style="color:#f92672">.</span>db<span style="color:#f92672">.</span>commit()
+        <span style="color:#66d9ef">except</span>:
+            <span style="color:#75715e"># 当失败时执行rollback当作没发生</span>
+            self<span style="color:#f92672">.</span>db<span style="color:#f92672">.</span>rollback()
+
+<span style="color:#75715e">## 插入操作增强版</span>
+    <span style="color:#75715e"># 这个函数可以完成add_info的任务，并且具有更好的复用性</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_Info</span>(self, data, table):
+        <span style="color:#75715e"># keys即为&#39;id, name, age&#39;</span>
+        keys <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;, &#39;</span><span style="color:#f92672">.</span>join(data<span style="color:#f92672">.</span>keys())
+        <span style="color:#75715e"># 当len(data)=3时，[&#39;%s&#39;]*len(data)即为[&#39;%s&#39;,&#39;%s&#39;,&#39;%s&#39;]</span>
+        values <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;, &#39;</span><span style="color:#f92672">.</span>join([<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span>]<span style="color:#f92672">*</span>len(data))
+        
+        <span style="color:#75715e"># 拼写出主键存在时更新，不存在时插入的sql语句</span>
+        <span style="color:#75715e"># insert intostudents(id, name, age) values(%s, %s, %s) </span>
+        sql <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;insert into </span><span style="color:#e6db74">{table}</span><span style="color:#e6db74">(</span><span style="color:#e6db74">{keys}</span><span style="color:#e6db74">) values(</span><span style="color:#e6db74">{values}</span><span style="color:#e6db74">) &#39;</span> \
+                <span style="color:#f92672">.</span>format(table<span style="color:#f92672">=</span>table,keys<span style="color:#f92672">=</span>keys,values<span style="color:#f92672">=</span>values)
+        <span style="color:#75715e"># on duplicate key updateid = %s,name = %s,age = %s</span>
+        update <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;on duplicate key update &#39;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;,&#39;</span><span style="color:#f92672">.</span>join([<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{key}</span><span style="color:#e6db74"> = </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(key<span style="color:#f92672">=</span>key) <span style="color:#66d9ef">for</span> key <span style="color:#f92672">in</span> data])
+        sql <span style="color:#f92672">+=</span> update   <span style="color:#75715e"># 拼接sql</span>
+        
+        <span style="color:#66d9ef">try</span>:
+            self<span style="color:#f92672">.</span>cursor<span style="color:#f92672">.</span>execute(sql, tuple(data<span style="color:#f92672">.</span>values())<span style="color:#f92672">*</span><span style="color:#ae81ff">2</span>)
+            self<span style="color:#f92672">.</span>db<span style="color:#f92672">.</span>commit()
+            print(<span style="color:#e6db74">&#34;sucess!&#34;</span>)
+        <span style="color:#66d9ef">except</span>:
+            self<span style="color:#f92672">.</span>db<span style="color:#f92672">.</span>rollback()
+            print(<span style="color:#e6db74">&#34;fail!&#34;</span>)
+        
+<span style="color:#75715e">## 删除操作         </span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">delete_Info</span>(self,table,condition):
+        <span style="color:#75715e"># 删除操作的sql语句</span>
+        sql <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;delete from </span><span style="color:#e6db74">{table}</span><span style="color:#e6db74"> where </span><span style="color:#e6db74">{condition}</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>format(table<span style="color:#f92672">=</span>table, condition <span style="color:#f92672">=</span> condition)
+        
+        <span style="color:#66d9ef">try</span>:
+            self<span style="color:#f92672">.</span>cursor<span style="color:#f92672">.</span>execute(sql)
+            self<span style="color:#f92672">.</span>db<span style="color:#f92672">.</span>commit()
+        <span style="color:#66d9ef">except</span>:
+            self<span style="color:#f92672">.</span>db<span style="color:#f92672">.</span>rollback()
+<span style="color:#75715e">## 查询操作</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">find_Info</span>(self, table, condition):
+        sql <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;select * from </span><span style="color:#e6db74">{table}</span><span style="color:#e6db74"> where </span><span style="color:#e6db74">{condition}</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>format(table<span style="color:#f92672">=</span>table,condition<span style="color:#f92672">=</span>condition)
+        <span style="color:#66d9ef">try</span>:
+            self<span style="color:#f92672">.</span>cursor<span style="color:#f92672">.</span>execute(sql)
+            print(<span style="color:#e6db74">&#39;Count:&#39;</span>,self<span style="color:#f92672">.</span>cursor<span style="color:#f92672">.</span>rowcount)
+            row <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>cursor<span style="color:#f92672">.</span>fetchone()
+            <span style="color:#66d9ef">while</span> row:
+                print(<span style="color:#e6db74">&#39;Row:&#39;</span>, row)
+                row <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>cursor<span style="color:#f92672">.</span>fetchone()
+        <span style="color:#66d9ef">except</span>:
+            print(<span style="color:#e6db74">&#39;Error&#39;</span>)
+<span style="color:#75715e">## 关闭操作</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">close</span>(self):
+        <span style="color:#75715e"># 关闭数据库</span>
+        self<span style="color:#f92672">.</span>db<span style="color:#f92672">.</span>close()
+        
+    
+<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
+
+    db <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;spiders&#39;</span>
+    table <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;students&#39;</span>
+    host <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;localhost&#39;</span>
+    user <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;root&#39;</span>
+    password <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;1234&#39;</span>
+    port <span style="color:#f92672">=</span> <span style="color:#ae81ff">3306</span>
+    SQL <span style="color:#f92672">=</span> mysql(host, user, password, port, db)
+    
+    data <span style="color:#f92672">=</span> {
+        <span style="color:#e6db74">&#39;id&#39;</span>:<span style="color:#e6db74">&#39;201200001&#39;</span>,
+        <span style="color:#e6db74">&#39;name&#39;</span>:<span style="color:#e6db74">&#39;Bob&#39;</span>,
+        <span style="color:#e6db74">&#39;age&#39;</span>:<span style="color:#ae81ff">21</span>
+    }
+    SQL<span style="color:#f92672">.</span>add_Info(data, table)
+    SQL<span style="color:#f92672">.</span>find_Info(<span style="color:#e6db74">&#39;students&#39;</span>, <span style="color:#e6db74">&#39;age=21&#39;</span>)
+</code></pre></div>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/mysql/" rel="tag">mysql</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/python/" rel="tag">python</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Team317 avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Team317</span>
+	</div>
+	<div class="authorbox__description">
+		John Doe&rsquo;s true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it.
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/python%E7%AC%94%E8%AE%B0/%E7%9F%A5%E4%B9%8E%E7%83%AD%E6%A6%9C%E7%88%AC%E5%8F%96/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">知乎热榜爬取</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/python%E7%AC%94%E8%AE%B0/ipconfig%E5%90%84%E4%B8%AAip%E7%9A%84%E5%90%AB%E4%B9%89/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">ipconfig各个ip的含义</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://duckduckgo.com/">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sites" value=""/>
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/docs/getting-started/">Getting started</a></li>
+			<li class="widget__item"><a class="widget__link" href="/docs/customization/">Customization</a></li>
+			<li class="widget__item"><a class="widget__link" href="/docs/faq/">Frequently asked questions (FAQ)</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/basic-elements/">Basic HTML Elements</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/hugo-template-primer/">(Hu)go Template Primer</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/c&#43;&#43;/">C&#43;&#43;</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/">C语言笔记</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/golang/">golang</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/htmlcssjs/">html&amp;css&amp;js</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/python%E7%AC%94%E8%AE%B0/">python笔记</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/">数据处理</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/">编程散记</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/basic-elements/" title="Basic Elements">Basic Elements</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/c/" title="C">C</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/c&#43;&#43;/" title="C&#43;&#43;">C&#43;&#43;</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/css/" title="CSS">CSS</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="development">development</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/go/" title="go">go</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/golang/" title="golang">golang</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/html/" title="html">html</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/installation/" title="Installation">Installation</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/json/" title="json">json</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="linux">linux</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mysql/" title="mysql">mysql</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="python">python</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/templates/" title="templates">templates</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/themes/" title="themes">themes</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/" title="位运算">位运算</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98/" title="动态内存">动态内存</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" title="多线程">多线程</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="正则表达式">正则表达式</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%B1%87%E7%BC%96/" title="汇编">汇编</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E7%88%AC%E8%99%AB/" title="爬虫">爬虫</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E7%BD%91%E7%BB%9C/" title="网络">网络</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" title="虚拟机">虚拟机</a>
+	</div>
+</div>
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/Tom-DaLin" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Email" href="mailto:2629757717@qq.com">
+				<svg class="widget-social__link-icon icon icon-mail" width="24" height="24" viewBox="0 0 416 288"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg>
+				<span>2629757717@qq.com</span>
+			</a>
+		</div>
+
+		
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="CSDN" rel="noopener noreferrer" href="" target="_blank">
+				<span>CSDN</span>
+			</a>
+		</div>
+		
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Mainroad.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

@@ -6,7 +6,7 @@
     <description>Recent content on Mainroad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting started</title>
       <link>/docs/getting-started/</link>
@@ -40,21 +40,50 @@ in the documentation.&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>Ubuntu命令简记</title>
+      <link>/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/ubuntu%E5%91%BD%E4%BB%A4%E7%AE%80%E8%AE%B0/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/ubuntu%E5%91%BD%E4%BB%A4%E7%AE%80%E8%AE%B0/</guid>
+      <description>&lt;p&gt;以下内容仅为一次学习记录&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;history&lt;/code&gt;    显示在该终端使用过的所有命令；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;history |grep sudo*&lt;/code&gt;   显示在该终端中使用过且包含字符“sudo”的所有命令；&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>正则表达式小结</title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%B0%8F%E7%BB%93/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%B0%8F%E7%BB%93/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;正则表达式的重复次数&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;?(0次或1次):可以这么理解，“？”表示“要不要重复”，那结果就只能是“要(1次)”和“不要(0次)”&lt;/li&gt;
+&lt;li&gt;+(1次或多次):可以理解为重复次数加n，n取(0，n)，但由于本身匹配一次，所以至少会重复一次。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>计数二进制中1的位数</title>
+      <link>/%E7%AE%97%E6%B3%95/%E8%AE%A1%E6%95%B0%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E4%BD%8D%E6%95%B0/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%AE%97%E6%B3%95/%E8%AE%A1%E6%95%B0%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E4%BD%8D%E6%95%B0/</guid>
+      <description>&lt;p&gt;​&lt;/p&gt;
+&lt;p&gt;问题：从键盘上输入一个二进制数，统计其中1的位数并输出统计结果&lt;/p&gt;
+&lt;p&gt;C++实现过程中的关键：从键盘上得到的数据依变量类型存储为相应的类型，如果将输入类型定义为整型，则在读取中只会按十进制形式进行存储，如输入二进制数，读取到十进制变量中将变成所以用整型变量存储回使数据信息改变，在C++中，可以用字符串存储，定义一个string对象，用字符的方式处理。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Queue的put、join和task_one</title>
       <link>/python%E7%AC%94%E8%AE%B0/queue%E7%9A%84putjoin%E5%92%8Ctask_one/</link>
       <pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>/python%E7%AC%94%E8%AE%B0/queue%E7%9A%84putjoin%E5%92%8Ctask_one/</guid>
-      <description>Introduction to Go Templates 在学习Queue时task_one时让我迷惑了很久，理清之后写下了这篇笔记。
-python中的queue库提供了一个线程安全的类Queue，它和普通的队列一样具有先进先出的特点，不同的在于它对与空队列的处理。
-Queue对象使用get弹出队头的元素，使用put将元素插入队尾。Queue的源码并不长，在源码中Queue内部设置了条件变量，当队列为空而执行get操作时，该操作将会被阻塞；当队列满而执行put操作时，该操作同样会被阻塞。此外queue内部设置的队列是collections提供的deque，这是一个线程安全的双端队列，对它进行入队和出队操作都是原子操作，而Queue的get和put操作沿用了这一操作，所以Queue也是线程安全的，这使得Queue常用于多线程中。
-接下来转入正题。
-要理解task_one，就需要理解与put、join、task_one三个操作都相关的内部属性unfinished_tasks。
-每当执行一次put操作，unfinished_tasks就加一，可理解为put代表增加了一个任务；
-每执行一次task_one操作，unfinished_tasks就减一，可以把task_one放在get操作之后，当get成功执行后，在执行task_one使得unfinished_tasks减一，代表完成了一个任务；
-而join则通过判断unfinished_tasks是否为零执行wait操作；
-在python的官方文档中有关于task_one的代码样例，我在样例的基础上增加了关于unfinished_tasks的注释，以便读者理解：
-import threading, queue q = queue.Queue() def worker(): while True: item = q.get() print(f&amp;#39;Working on {item}&amp;#39;) print(f&amp;#39;Finished {item}&amp;#39;) q.task_done()	# unfinished_tasks += 1 # turn-on the worker thread threading.Thread(target=worker, daemon=True).start() # send thirty task requests to the worker for item in range(30): q.put(item)	# unfinished_tasks -= 1 print(&amp;#39;All task requests sent\n&amp;#39;, end=&amp;#39;&amp;#39;) # block until all tasks are done q.</description>
+      <description>&lt;p&gt;在学习&lt;strong&gt;Queue&lt;/strong&gt;时&lt;strong&gt;task_one&lt;/strong&gt;时让我迷惑了很久，理清之后写下了这篇笔记。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;python&lt;/strong&gt;中的&lt;strong&gt;queue&lt;/strong&gt;库提供了一个线程安全的类&lt;strong&gt;Queue&lt;/strong&gt;，它和普通的队列一样具有先进先出的特点，不同的在于它对与空队列的处理。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -65,6 +94,150 @@ import threading, queue q = queue.Queue() def worker(): while True: item = q.get
       <guid>/about/</guid>
       <description>Our website builds with Hugo static site generator and Mainroad theme. This demo allows you to see what Mainroad based website looks like before deciding to go with it. Just keep in mind that the current demo shows the basics, a small part of what the combination of Hugo and Mainroad can do.
 About Mainroad Mainroad is a responsive, simple, clean and content-focused Hugo theme based on the MH Magazine lite WordPress theme.</description>
+    </item>
+    
+    <item>
+      <title>正则表达式匹配强密码解析</title>
+      <link>/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D%E5%BC%BA%E5%AF%86%E7%A0%81/</link>
+      <pubDate>Fri, 10 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D%E5%BC%BA%E5%AF%86%E7%A0%81/</guid>
+      <description>密码要求：
+1 至少含有一个小写字母；
+2 至少含有一个大写字母；
+3 至少含有一个数字；
+4 至少含有一个特殊字符；
+5 密码长度要求八个字符及以上；
+^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#\$%\^&amp;amp;\*\(\)]).{8,} 这个正则表达式可以分成两个部分，分别为^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\!\@\#\$\%\^\&amp;amp;\*\(\)])和.{8,}，我们拆开分析。
+先看第一部分^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\!\@\#\$\%\^\&amp;amp;\*\(\)])，从左到右看，第一个字符是^，表示字符的开头，后面接着的是四个后行断言(?=.*[a-z])、(?=.*[A-Z])、(?=.*\d)、(?=.*[\!\@\#\$\%\^\&amp;amp;\*\(\)])，他们形式相似，先挑第一个进行分析。
+(?=.*[a-z])置于正则表达式^之后，表示在字符开头之后需要出现.*[a-z]才能匹配，而.*[a-z]表示需要出现小写字母。所以^(?=.*[a-z])表示在字符中需要出现一个小写字符。随后的三个断言的含义依次为：字符中要求出现一个大写字母、字符中要求出现一个数字、字符中要求出现一个特殊字符。组合起来即为：字符中要求出现小写字母，大写字母、一个数字、一个特殊字符。
+再看第二部分.{8,}，表示一个长度至少为8的任意字符。
+最后将两个部分组合起来，即为强密码的要求：要求出现一个小写字母、大写字符、数字和特殊字符，以及字符长度至少为8。这里有一点需要注意：^之后的后行断言所匹配的内容虽然在第一个部分中不会捕获，但是却可以被第二部分捕获。</description>
+    </item>
+    
+    <item>
+      <title>虚拟机读取映像文件</title>
+      <link>/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AF%BB%E5%8F%96%E6%98%A0%E5%83%8F%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AF%BB%E5%8F%96%E6%98%A0%E5%83%8F%E6%96%87%E4%BB%B6/</guid>
+      <description>&lt;p&gt;在使用VMware Player的时候，启动虚拟机时会出现下面的错误：
+&lt;img src=&#34;https://img-blog.csdnimg.cn/20210607083335996.png&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>C语言宏操作</title>
+      <link>/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/c%E8%AF%AD%E8%A8%80%E5%AE%8F%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Wed, 19 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/c%E8%AF%AD%E8%A8%80%E5%AE%8F%E6%93%8D%E4%BD%9C/</guid>
+      <description>&lt;h2 id=&#34;编译和宏&#34;&gt;编译和宏&lt;/h2&gt;
+&lt;p&gt;编译可分为两个阶段：编译和链接&lt;/p&gt;
+&lt;p&gt;step1:编译阶段进行语法检查&lt;/p&gt;
+&lt;p&gt;step2:链接阶段将各个相互关联的模块拼接在一起&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>爬取和处理json数据</title>
+      <link>/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E5%8F%96%E5%92%8C%E5%A4%84%E7%90%86json%E6%95%B0%E6%8D%AE/</link>
+      <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E5%8F%96%E5%92%8C%E5%A4%84%E7%90%86json%E6%95%B0%E6%8D%AE/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;任务概述&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;爬取知乎中的推荐内容，输出每条推荐文章的链接和标题，
+或许可以使用获取html的方式来完成这个任务，不过这次主要想练一下json文件的爬取。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E8%99%AB%E8%AE%BE%E7%BD%AE%E6%89%8B%E6%9C%BA%E4%BB%A3%E7%90%86/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E8%99%AB%E8%AE%BE%E7%BD%AE%E6%89%8B%E6%9C%BA%E4%BB%A3%E7%90%86/</guid>
+      <description>&lt;p&gt;@[toc]&lt;/p&gt;
+&lt;h3 id=&#34;mitmproxy的安装&#34;&gt;mitmproxy的安装&lt;/h3&gt;
+&lt;p&gt;如果安装了anaconda，则在终端执行下面这条命令&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;pip install mitmproxy
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>ipconfig各个ip的含义</title>
+      <link>/python%E7%AC%94%E8%AE%B0/ipconfig%E5%90%84%E4%B8%AAip%E7%9A%84%E5%90%AB%E4%B9%89/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/python%E7%AC%94%E8%AE%B0/ipconfig%E5%90%84%E4%B8%AAip%E7%9A%84%E5%90%AB%E4%B9%89/</guid>
+      <description>&lt;p&gt;有时候在执行ipconfig时，会显示出多个ip，如果对网络不熟的话，可能会傻傻分不清，不知道这些ip都是什么意思。这里对比了不同网络条件下电脑的ip的变化，方便你分辨这些不同的ip。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>用pymysql操作mysql</title>
+      <link>/python%E7%AC%94%E8%AE%B0/%E7%94%A8pymysql%E6%93%8D%E4%BD%9Cmysql/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/python%E7%AC%94%E8%AE%B0/%E7%94%A8pymysql%E6%93%8D%E4%BD%9Cmysql/</guid>
+      <description>&lt;p&gt;在python中使用pymysql操作mysql数据库，代码和注释如下：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>用C创建记录型文件</title>
+      <link>/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/%E7%94%A8c%E5%88%9B%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Fri, 30 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/%E7%94%A8c%E5%88%9B%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%96%87%E4%BB%B6/</guid>
+      <description>&lt;p&gt;@[toc]&lt;/p&gt;
+&lt;h3 id=&#34;任务概述&#34;&gt;任务概述&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;简单的创建一个记录型文件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;文件分为流式文件和记录型文件。流式文件中的数据没有组织结构，可以认为是一长串的字符；而记录型文件是有结构的，比如我们用的excel，可以认为每一行是一条记录，每条记录中可以有不同类型的数据，如字符型的姓名，浮点型的分数，这些数据组成了一个同学的成绩记录。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>知乎热榜爬取</title>
+      <link>/python%E7%AC%94%E8%AE%B0/%E7%9F%A5%E4%B9%8E%E7%83%AD%E6%A6%9C%E7%88%AC%E5%8F%96/</link>
+      <pubDate>Fri, 30 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/python%E7%AC%94%E8%AE%B0/%E7%9F%A5%E4%B9%8E%E7%83%AD%E6%A6%9C%E7%88%AC%E5%8F%96/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;任务概述&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这次的任务是定时的爬取知乎热榜前十的标题，如果当前爬取的热榜较上一次有所变动，则将新增的标题打印出来。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>优先使用malloc创建链表节点</title>
+      <link>/c&#43;&#43;%E7%AC%94%E8%AE%B0/%E4%BC%98%E5%85%88%E4%BD%BF%E7%94%A8malloc%E5%88%9B%E5%BB%BA%E9%93%BE%E8%A1%A8%E8%8A%82%E7%82%B9/</link>
+      <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/c&#43;&#43;%E7%AC%94%E8%AE%B0/%E4%BC%98%E5%85%88%E4%BD%BF%E7%94%A8malloc%E5%88%9B%E5%BB%BA%E9%93%BE%E8%A1%A8%E8%8A%82%E7%82%B9/</guid>
+      <description>&lt;h3 id=&#34;1链表节点的动态分配&#34;&gt;1、链表节点的动态分配&lt;/h3&gt;
+&lt;p&gt;在用一条打印语句打印链表节点值时，发现链表节点的信息发生了改变，见下图：
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>html分割与居中</title>
+      <link>/htmlcssjs/html%E5%88%86%E5%89%B2%E4%B8%8E%E5%B1%85%E4%B8%AD/</link>
+      <pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/htmlcssjs/html%E5%88%86%E5%89%B2%E4%B8%8E%E5%B1%85%E4%B8%AD/</guid>
+      <description>不选中第一个元素 排版一个天气网站，下面这部分页面由四个li组成，需要在每个li左侧插入一条竖线作为分割（这条竖线是一张图片），要求第一个li的背景图中不能插入竖线，则需要选中除第一个li之外的其他li插入图片。 .weather_list{ margin:0 auto; text-align: center; } .weather_list li{ width: 240px; height: 240px; display: inline-block; } /* 选中除一个li之外的其他li */ .weather_list li:not(:first-child){ background: url(&amp;#34;../img/line.png&amp;#34;) no-repeat left; } 对比一下选中第一个li的选择器：
+.weather_list li:first-child 注意插入&amp;quot;:not&amp;quot;的位置，不然选择器会作废。
+用css插入图片 还是上面的这个页面，背景中需要插入竖线，要求用css完成，这个时候不能在html文件中使用img标签，可以通过在css文件中设置背景图片来实现：
+.weather_list li:not(:first-child){ background: url(&amp;#34;../img/line.png&amp;#34;) no-repeat left; } 在设置完url之后一般需要加上 &amp;quot; no-repeat &amp;quot; 防止因为图片大小尺寸不足以重复的方式铺满所在块。后面的left用于设定图片的位置。
+居中对齐 html中常常需要使用大量的对齐操作，最近学到两种居中对齐方式。
+一种是用margin:auto 自动对齐，这要求其父元素的宽高是固定好大小的，如其父元素大小为height:300px; width:400px; ，这个时候可以用margin对齐。水平居中用margin:0 auto，垂直居中用margin:auto 0 。 此外再记一下margin:30px 20px 25px 30px 设置的含义，这分别设置的是上、右、下、左四个方向的margin值。
+另一种对齐方式是使用text-align:center，这要求该元素的父元素是一个块级元素，可参考博客：CSS水平居中+垂直居中+水平/垂直居中的方法总结</description>
+    </item>
+    
+    <item>
+      <title>汇编复制指定段</title>
+      <link>/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E6%B1%87%E7%BC%96%E5%A4%8D%E5%88%B6%E6%8C%87%E4%BB%A4%E6%AE%B5/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E6%B1%87%E7%BC%96%E5%A4%8D%E5%88%B6%E6%8C%87%E4%BB%A4%E6%AE%B5/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;问题概述&lt;/strong&gt;
+下面的程序的功能是将“mov ax,4c00h”之前的指令复制到内存0:200处,补全程序。上机调试,跟踪运行结果。&lt;/p&gt;</description>
     </item>
     
     <item>

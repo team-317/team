@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>html&amp;css&amp;js on Mainroad</title>
+    <link>/categories/htmlcssjs/</link>
+    <description>Recent content in html&amp;css&amp;js on Mainroad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/htmlcssjs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>html分割与居中</title>
+      <link>/htmlcssjs/html%E5%88%86%E5%89%B2%E4%B8%8E%E5%B1%85%E4%B8%AD/</link>
+      <pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/htmlcssjs/html%E5%88%86%E5%89%B2%E4%B8%8E%E5%B1%85%E4%B8%AD/</guid>
+      <description>不选中第一个元素 排版一个天气网站，下面这部分页面由四个li组成，需要在每个li左侧插入一条竖线作为分割（这条竖线是一张图片），要求第一个li的背景图中不能插入竖线，则需要选中除第一个li之外的其他li插入图片。 .weather_list{ margin:0 auto; text-align: center; } .weather_list li{ width: 240px; height: 240px; display: inline-block; } /* 选中除一个li之外的其他li */ .weather_list li:not(:first-child){ background: url(&amp;#34;../img/line.png&amp;#34;) no-repeat left; } 对比一下选中第一个li的选择器：
+.weather_list li:first-child 注意插入&amp;quot;:not&amp;quot;的位置，不然选择器会作废。
+用css插入图片 还是上面的这个页面，背景中需要插入竖线，要求用css完成，这个时候不能在html文件中使用img标签，可以通过在css文件中设置背景图片来实现：
+.weather_list li:not(:first-child){ background: url(&amp;#34;../img/line.png&amp;#34;) no-repeat left; } 在设置完url之后一般需要加上 &amp;quot; no-repeat &amp;quot; 防止因为图片大小尺寸不足以重复的方式铺满所在块。后面的left用于设定图片的位置。
+居中对齐 html中常常需要使用大量的对齐操作，最近学到两种居中对齐方式。
+一种是用margin:auto 自动对齐，这要求其父元素的宽高是固定好大小的，如其父元素大小为height:300px; width:400px; ，这个时候可以用margin对齐。水平居中用margin:0 auto，垂直居中用margin:auto 0 。 此外再记一下margin:30px 20px 25px 30px 设置的含义，这分别设置的是上、右、下、左四个方向的margin值。
+另一种对齐方式是使用text-align:center，这要求该元素的父元素是一个块级元素，可参考博客：CSS水平居中+垂直居中+水平/垂直居中的方法总结</description>
+    </item>
+    
+  </channel>
+</rss>
