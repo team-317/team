@@ -34,7 +34,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 
 [Params.widgets]
-  recent_num = 5 # Set the number of articles in the "Recent articles" widget, max number is 6
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget, 只显示列在了mainSections中的博客
   categories_counter = true # Enable counter for each category in "Categories" widget
   tags_counter = true # Enable counter for each tag in "Tags" widget
 
