@@ -3,7 +3,7 @@ title: 优先使用malloc创建链表节点
 author: team317
 Date: 2021-03-09
 categories:  
-  - "C++"
+  - "C++笔记"
 tags:  
   - "动态内存"
 ---

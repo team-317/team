@@ -7,7 +7,7 @@ categories:
 tags:  
   - "linux"
 ---
-以下内容仅为一次学习记录
+以下是初学Ubuntu命令的一次学习记录
 + `history`    显示在该终端使用过的所有命令；
 + `history |grep sudo*`   显示在该终端中使用过且包含字符“sudo”的所有命令；<!--more-->
 + `!!`  获得上一条指令，可和sudo搭配；

@@ -45,7 +45,7 @@ in the documentation.&lt;/p&gt;</description>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/ubuntu%E5%91%BD%E4%BB%A4%E7%AE%80%E8%AE%B0/</guid>
-      <description>&lt;p&gt;以下内容仅为一次学习记录&lt;/p&gt;
+      <description>&lt;p&gt;以下是初学Ubuntu命令的一次学习记录&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;history&lt;/code&gt;    显示在该终端使用过的所有命令；&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;history |grep sudo*&lt;/code&gt;   显示在该终端中使用过且包含字符“sudo”的所有命令；&lt;/li&gt;
