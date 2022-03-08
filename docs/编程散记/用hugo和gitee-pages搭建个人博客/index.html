@@ -83,6 +83,11 @@ git push
 <p>但是！！！Gitee Pages的个人版在上传后不会自动重新更新博客，所以还得在Gitee Pages服务中点击&quot;更新&quot;:</p>
 <p><img src="https://gitee.com/Team317/pictures/raw/master/images/20220308213341.png" alt=""></p>
 <p>更新后可能由于浏览器对网页进行了缓存，还需要再等上几分钟才能看到更新后的博客。</p>
+<h3 id="头像的修改">头像的修改</h3>
+<p>在配置头像的时候遇到了一个问题，就是按文档说明我将头像avatar.png放在了工作目录下的img文件夹下，但无论我怎么刷新，博客中的头像都没有替换成我设置的那个头像，而是一直保持为原有的头像，我一直以为是缓存的问题（这是部分原因），但清除缓存后问题依然没有解决。</p>
+<p>慢慢的才发现主题中的img文件夹是放到static文件夹下的。如果程序在工作目录下没有找到avatar.png，就会在主题下的相应目录下查找avatar.png，而由于我在工作目录下将img文件夹放错了位置，所以博客中的头像一直来自于主题下的static/img/avatar.png。</p>
+<p>因此我在工作目录下的static目录下创建img文件夹，并将avatar.png文件放入其中，问题解决。</p>
+<p>如果要修改favicon.ico方式也是一样的。</p>
 		</div>
 		<footer class="post__footer">
 			
@@ -100,7 +105,7 @@ git push
 
 <div class="authorbox clearfix">
 	<figure class="authorbox__avatar">
-		<img alt="Team317 avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+		<img alt="Team317 avatar" src="/img/profile.png" class="avatar" height="90" width="90">
 	</figure>
 	<div class="authorbox__header">
 		<span class="authorbox__name">About Team317</span>

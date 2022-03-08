@@ -9,7 +9,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 [Author]
   name = "Team317"
   bio = "所有事物都在发展，每个人都在不断成长，我也在向前推进着。"
-  avatar = "img/avatar.png"
+  avatar = "img/profile.png"
 
 [Params]
   description = "John Doe's Personal blog about everything" # Description of your site
