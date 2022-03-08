@@ -34,7 +34,7 @@
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/%E7%94%A8selenium%E6%8A%93%E5%8F%96%E6%B7%98%E5%AE%9D%E9%A1%B5%E9%9D%A2%E5%95%86%E5%93%81%E4%BF%A1%E6%81%AF/</guid>
-      <description>&lt;h3 id=&#34;概述&#34;&gt;概述&lt;/h3&gt;
+      <description>&lt;p&gt;&lt;strong&gt;问题概述&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;使用selenium登录淘宝并抓取关键字&amp;quot;iPad&amp;quot;对应页面的商品信息。&lt;/p&gt;
 &lt;p&gt;页面的抓取使用requests应该也能做到，这次的话使用selenium获取每一页的信息，然后用pyquery对页面信息进行处理。&lt;/p&gt;</description>
     </item>
