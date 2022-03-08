@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>python on Mainroad</title>
-    <link>/tags/python/</link>
-    <description>Recent content in python on Mainroad</description>
+    <title>python on Team317</title>
+    <link>https://team317.gitee.io/blog/tags/python/</link>
+    <description>Recent content in python on Team317</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/blog/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>正则表达式小结</title>
-      <link>/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%B0%8F%E7%BB%93/</link>
+      <link>https://team317.gitee.io/blog/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%B0%8F%E7%BB%93/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%B0%8F%E7%BB%93/</guid>
+      <guid>https://team317.gitee.io/blog/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%B0%8F%E7%BB%93/</guid>
       <description>&lt;p&gt;&lt;strong&gt;正则表达式的重复次数&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;?(0次或1次):可以这么理解，“？”表示“要不要重复”，那结果就只能是“要(1次)”和“不要(0次)”&lt;/li&gt;
@@ -22,20 +22,20 @@
     
     <item>
       <title>Queue的put、join和task_one</title>
-      <link>/python%E7%AC%94%E8%AE%B0/queue%E7%9A%84putjoin%E5%92%8Ctask_one/</link>
+      <link>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/queue%E7%9A%84putjoin%E5%92%8Ctask_one/</link>
       <pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>/python%E7%AC%94%E8%AE%B0/queue%E7%9A%84putjoin%E5%92%8Ctask_one/</guid>
+      <guid>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/queue%E7%9A%84putjoin%E5%92%8Ctask_one/</guid>
       <description>&lt;p&gt;在学习&lt;strong&gt;Queue&lt;/strong&gt;时&lt;strong&gt;task_one&lt;/strong&gt;时让我迷惑了很久，理清之后写下了这篇笔记。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;python&lt;/strong&gt;中的&lt;strong&gt;queue&lt;/strong&gt;库提供了一个线程安全的类&lt;strong&gt;Queue&lt;/strong&gt;，它和普通的队列一样具有先进先出的特点，不同的在于它对与空队列的处理。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>正则表达式匹配强密码解析</title>
-      <link>/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D%E5%BC%BA%E5%AF%86%E7%A0%81/</link>
+      <link>https://team317.gitee.io/blog/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D%E5%BC%BA%E5%AF%86%E7%A0%81/</link>
       <pubDate>Fri, 10 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D%E5%BC%BA%E5%AF%86%E7%A0%81/</guid>
+      <guid>https://team317.gitee.io/blog/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D%E5%BC%BA%E5%AF%86%E7%A0%81/</guid>
       <description>密码要求：
 1 至少含有一个小写字母；
 2 至少含有一个大写字母；
@@ -51,10 +51,10 @@
     
     <item>
       <title>爬取和处理json数据</title>
-      <link>/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E5%8F%96%E5%92%8C%E5%A4%84%E7%90%86json%E6%95%B0%E6%8D%AE/</link>
+      <link>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E5%8F%96%E5%92%8C%E5%A4%84%E7%90%86json%E6%95%B0%E6%8D%AE/</link>
       <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E5%8F%96%E5%92%8C%E5%A4%84%E7%90%86json%E6%95%B0%E6%8D%AE/</guid>
+      <guid>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E5%8F%96%E5%92%8C%E5%A4%84%E7%90%86json%E6%95%B0%E6%8D%AE/</guid>
       <description>&lt;p&gt;&lt;strong&gt;任务概述&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;爬取知乎中的推荐内容，输出每条推荐文章的链接和标题，
 或许可以使用获取html的方式来完成这个任务，不过这次主要想练一下json文件的爬取。&lt;/p&gt;</description>
@@ -62,19 +62,19 @@
     
     <item>
       <title>用pymysql操作mysql</title>
-      <link>/python%E7%AC%94%E8%AE%B0/%E7%94%A8pymysql%E6%93%8D%E4%BD%9Cmysql/</link>
+      <link>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%94%A8pymysql%E6%93%8D%E4%BD%9Cmysql/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>/python%E7%AC%94%E8%AE%B0/%E7%94%A8pymysql%E6%93%8D%E4%BD%9Cmysql/</guid>
+      <guid>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%94%A8pymysql%E6%93%8D%E4%BD%9Cmysql/</guid>
       <description>&lt;p&gt;在python中使用pymysql操作mysql数据库，代码和注释如下：&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>知乎热榜爬取</title>
-      <link>/python%E7%AC%94%E8%AE%B0/%E7%9F%A5%E4%B9%8E%E7%83%AD%E6%A6%9C%E7%88%AC%E5%8F%96/</link>
+      <link>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%9F%A5%E4%B9%8E%E7%83%AD%E6%A6%9C%E7%88%AC%E5%8F%96/</link>
       <pubDate>Fri, 30 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>/python%E7%AC%94%E8%AE%B0/%E7%9F%A5%E4%B9%8E%E7%83%AD%E6%A6%9C%E7%88%AC%E5%8F%96/</guid>
+      <guid>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%9F%A5%E4%B9%8E%E7%83%AD%E6%A6%9C%E7%88%AC%E5%8F%96/</guid>
       <description>&lt;p&gt;&lt;strong&gt;任务概述&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;这次的任务是定时的爬取知乎热榜前十的标题，如果当前爬取的热榜较上一次有所变动，则将新增的标题打印出来。&lt;/p&gt;</description>
     </item>

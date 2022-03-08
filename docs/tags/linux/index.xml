@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>linux on Mainroad</title>
-    <link>/tags/linux/</link>
-    <description>Recent content in linux on Mainroad</description>
+    <title>linux on Team317</title>
+    <link>https://team317.gitee.io/blog/tags/linux/</link>
+    <description>Recent content in linux on Team317</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/blog/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ubuntu命令简记</title>
-      <link>/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/ubuntu%E5%91%BD%E4%BB%A4%E7%AE%80%E8%AE%B0/</link>
+      <link>https://team317.gitee.io/blog/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/ubuntu%E5%91%BD%E4%BB%A4%E7%AE%80%E8%AE%B0/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/ubuntu%E5%91%BD%E4%BB%A4%E7%AE%80%E8%AE%B0/</guid>
+      <guid>https://team317.gitee.io/blog/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/ubuntu%E5%91%BD%E4%BB%A4%E7%AE%80%E8%AE%B0/</guid>
       <description>&lt;p&gt;以下是初学Ubuntu命令的一次学习记录&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;history&lt;/code&gt;    显示在该终端使用过的所有命令；&lt;/li&gt;

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Html&amp;css&amp;js on Mainroad</title>
-    <link>/htmlcssjs/</link>
-    <description>Recent content in Html&amp;css&amp;js on Mainroad</description>
+    <title>Html&amp;css&amp;js on Team317</title>
+    <link>https://team317.gitee.io/blog/htmlcssjs/</link>
+    <description>Recent content in Html&amp;css&amp;js on Team317</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/htmlcssjs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/blog/htmlcssjs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>html分割与居中</title>
-      <link>/htmlcssjs/html%E5%88%86%E5%89%B2%E4%B8%8E%E5%B1%85%E4%B8%AD/</link>
+      <link>https://team317.gitee.io/blog/htmlcssjs/html%E5%88%86%E5%89%B2%E4%B8%8E%E5%B1%85%E4%B8%AD/</link>
       <pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>/htmlcssjs/html%E5%88%86%E5%89%B2%E4%B8%8E%E5%B1%85%E4%B8%AD/</guid>
+      <guid>https://team317.gitee.io/blog/htmlcssjs/html%E5%88%86%E5%89%B2%E4%B8%8E%E5%B1%85%E4%B8%AD/</guid>
       <description>不选中第一个元素 排版一个天气网站，下面这部分页面由四个li组成，需要在每个li左侧插入一条竖线作为分割（这条竖线是一张图片），要求第一个li的背景图中不能插入竖线，则需要选中除第一个li之外的其他li插入图片。 .weather_list{ margin:0 auto; text-align: center; } .weather_list li{ width: 240px; height: 240px; display: inline-block; } /* 选中除一个li之外的其他li */ .weather_list li:not(:first-child){ background: url(&amp;#34;../img/line.png&amp;#34;) no-repeat left; } 对比一下选中第一个li的选择器：
 .weather_list li:first-child 注意插入&amp;quot;:not&amp;quot;的位置，不然选择器会作废。
 用css插入图片 还是上面的这个页面，背景中需要插入竖线，要求用css完成，这个时候不能在html文件中使用img标签，可以通过在css文件中设置背景图片来实现：

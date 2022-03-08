@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>json on Mainroad</title>
-    <link>/tags/json/</link>
-    <description>Recent content in json on Mainroad</description>
+    <title>json on Team317</title>
+    <link>https://team317.gitee.io/blog/tags/json/</link>
+    <description>Recent content in json on Team317</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/json/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/blog/tags/json/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>爬取和处理json数据</title>
-      <link>/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E5%8F%96%E5%92%8C%E5%A4%84%E7%90%86json%E6%95%B0%E6%8D%AE/</link>
+      <link>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E5%8F%96%E5%92%8C%E5%A4%84%E7%90%86json%E6%95%B0%E6%8D%AE/</link>
       <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E5%8F%96%E5%92%8C%E5%A4%84%E7%90%86json%E6%95%B0%E6%8D%AE/</guid>
+      <guid>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E5%8F%96%E5%92%8C%E5%A4%84%E7%90%86json%E6%95%B0%E6%8D%AE/</guid>
       <description>&lt;p&gt;&lt;strong&gt;任务概述&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;爬取知乎中的推荐内容，输出每条推荐文章的链接和标题，
 或许可以使用获取html的方式来完成这个任务，不过这次主要想练一下json文件的爬取。&lt;/p&gt;</description>

@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python笔记s on Mainroad</title>
-    <link>/python%E7%AC%94%E8%AE%B0/</link>
-    <description>Recent content in Python笔记s on Mainroad</description>
+    <title>Python笔记s on Team317</title>
+    <link>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in Python笔记s on Team317</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/python%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Queue的put、join和task_one</title>
-      <link>/python%E7%AC%94%E8%AE%B0/queue%E7%9A%84putjoin%E5%92%8Ctask_one/</link>
+      <link>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/queue%E7%9A%84putjoin%E5%92%8Ctask_one/</link>
       <pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>/python%E7%AC%94%E8%AE%B0/queue%E7%9A%84putjoin%E5%92%8Ctask_one/</guid>
+      <guid>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/queue%E7%9A%84putjoin%E5%92%8Ctask_one/</guid>
       <description>&lt;p&gt;在学习&lt;strong&gt;Queue&lt;/strong&gt;时&lt;strong&gt;task_one&lt;/strong&gt;时让我迷惑了很久，理清之后写下了这篇笔记。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;python&lt;/strong&gt;中的&lt;strong&gt;queue&lt;/strong&gt;库提供了一个线程安全的类&lt;strong&gt;Queue&lt;/strong&gt;，它和普通的队列一样具有先进先出的特点，不同的在于它对与空队列的处理。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>爬取和处理json数据</title>
-      <link>/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E5%8F%96%E5%92%8C%E5%A4%84%E7%90%86json%E6%95%B0%E6%8D%AE/</link>
+      <link>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E5%8F%96%E5%92%8C%E5%A4%84%E7%90%86json%E6%95%B0%E6%8D%AE/</link>
       <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E5%8F%96%E5%92%8C%E5%A4%84%E7%90%86json%E6%95%B0%E6%8D%AE/</guid>
+      <guid>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E5%8F%96%E5%92%8C%E5%A4%84%E7%90%86json%E6%95%B0%E6%8D%AE/</guid>
       <description>&lt;p&gt;&lt;strong&gt;任务概述&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;爬取知乎中的推荐内容，输出每条推荐文章的链接和标题，
 或许可以使用获取html的方式来完成这个任务，不过这次主要想练一下json文件的爬取。&lt;/p&gt;</description>
@@ -30,19 +30,19 @@
     
     <item>
       <title>ipconfig各个ip的含义</title>
-      <link>/python%E7%AC%94%E8%AE%B0/ipconfig%E5%90%84%E4%B8%AAip%E7%9A%84%E5%90%AB%E4%B9%89/</link>
+      <link>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/ipconfig%E5%90%84%E4%B8%AAip%E7%9A%84%E5%90%AB%E4%B9%89/</link>
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>/python%E7%AC%94%E8%AE%B0/ipconfig%E5%90%84%E4%B8%AAip%E7%9A%84%E5%90%AB%E4%B9%89/</guid>
+      <guid>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/ipconfig%E5%90%84%E4%B8%AAip%E7%9A%84%E5%90%AB%E4%B9%89/</guid>
       <description>&lt;p&gt;有时候在执行ipconfig时，会显示出多个ip，如果对网络不熟的话，可能会傻傻分不清，不知道这些ip都是什么意思。这里对比了不同网络条件下电脑的ip的变化，方便你分辨这些不同的ip。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>爬虫：设置手机代理</title>
-      <link>/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E8%99%AB%E8%AE%BE%E7%BD%AE%E6%89%8B%E6%9C%BA%E4%BB%A3%E7%90%86/</link>
+      <link>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E8%99%AB%E8%AE%BE%E7%BD%AE%E6%89%8B%E6%9C%BA%E4%BB%A3%E7%90%86/</link>
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E8%99%AB%E8%AE%BE%E7%BD%AE%E6%89%8B%E6%9C%BA%E4%BB%A3%E7%90%86/</guid>
+      <guid>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E8%99%AB%E8%AE%BE%E7%BD%AE%E6%89%8B%E6%9C%BA%E4%BB%A3%E7%90%86/</guid>
       <description>&lt;h3 id=&#34;mitmproxy的安装&#34;&gt;mitmproxy的安装&lt;/h3&gt;
 &lt;p&gt;如果安装了anaconda，则在终端执行&lt;code&gt;pip install mitmproxy&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;安装后在目录下会增加三个可执行文件&lt;code&gt;mitmproxy.exe&lt;/code&gt;、&lt;code&gt;mitmdump.exe&lt;/code&gt;、&lt;code&gt;mitmweb.exe&lt;/code&gt;，为了能够在终端直接使用mitmdump命令，需将其文件路径添加到环境变量中，我的路径是&lt;code&gt;D:\InstallationLocation\Anaconda\envs\WebCrawler\Scripts&lt;/code&gt;，其中WebCrawler是我的虚拟环境。&lt;/p&gt;</description>
@@ -50,19 +50,19 @@
     
     <item>
       <title>用pymysql操作mysql</title>
-      <link>/python%E7%AC%94%E8%AE%B0/%E7%94%A8pymysql%E6%93%8D%E4%BD%9Cmysql/</link>
+      <link>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%94%A8pymysql%E6%93%8D%E4%BD%9Cmysql/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>/python%E7%AC%94%E8%AE%B0/%E7%94%A8pymysql%E6%93%8D%E4%BD%9Cmysql/</guid>
+      <guid>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%94%A8pymysql%E6%93%8D%E4%BD%9Cmysql/</guid>
       <description>&lt;p&gt;在python中使用pymysql操作mysql数据库，代码和注释如下：&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>知乎热榜爬取</title>
-      <link>/python%E7%AC%94%E8%AE%B0/%E7%9F%A5%E4%B9%8E%E7%83%AD%E6%A6%9C%E7%88%AC%E5%8F%96/</link>
+      <link>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%9F%A5%E4%B9%8E%E7%83%AD%E6%A6%9C%E7%88%AC%E5%8F%96/</link>
       <pubDate>Fri, 30 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>/python%E7%AC%94%E8%AE%B0/%E7%9F%A5%E4%B9%8E%E7%83%AD%E6%A6%9C%E7%88%AC%E5%8F%96/</guid>
+      <guid>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%9F%A5%E4%B9%8E%E7%83%AD%E6%A6%9C%E7%88%AC%E5%8F%96/</guid>
       <description>&lt;p&gt;&lt;strong&gt;任务概述&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;这次的任务是定时的爬取知乎热榜前十的标题，如果当前爬取的热榜较上一次有所变动，则将新增的标题打印出来。&lt;/p&gt;</description>
     </item>

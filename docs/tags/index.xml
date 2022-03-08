@@ -1,225 +1,225 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Mainroad</title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on Mainroad</description>
+    <title>Tags on Team317</title>
+    <link>https://team317.gitee.io/blog/tags/</link>
+    <description>Recent content in Tags on Team317</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C&#43;&#43;</title>
-      <link>/tags/c&#43;&#43;/</link>
+      <link>https://team317.gitee.io/blog/tags/c&#43;&#43;/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/c&#43;&#43;/</guid>
+      <guid>https://team317.gitee.io/blog/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linux</title>
-      <link>/tags/linux/</link>
+      <link>https://team317.gitee.io/blog/tags/linux/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/linux/</guid>
+      <guid>https://team317.gitee.io/blog/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>/tags/python/</link>
+      <link>https://team317.gitee.io/blog/tags/python/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/python/</guid>
+      <guid>https://team317.gitee.io/blog/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>位运算</title>
-      <link>/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/</link>
+      <link>https://team317.gitee.io/blog/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/</guid>
+      <guid>https://team317.gitee.io/blog/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/</guid>
       <description></description>
     </item>
     
     <item>
       <title>正则表达式</title>
-      <link>/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+      <link>https://team317.gitee.io/blog/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+      <guid>https://team317.gitee.io/blog/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
       <description></description>
     </item>
     
     <item>
       <title>多线程</title>
-      <link>/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</link>
+      <link>https://team317.gitee.io/blog/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</link>
       <pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</guid>
+      <guid>https://team317.gitee.io/blog/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Installation</title>
-      <link>/tags/installation/</link>
+      <link>https://team317.gitee.io/blog/tags/installation/</link>
       <pubDate>Mon, 24 Jan 2022 14:00:00 +0000</pubDate>
       
-      <guid>/tags/installation/</guid>
+      <guid>https://team317.gitee.io/blog/tags/installation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>虚拟机</title>
-      <link>/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
+      <link>https://team317.gitee.io/blog/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
       <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</guid>
+      <guid>https://team317.gitee.io/blog/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</guid>
       <description></description>
     </item>
     
     <item>
       <title>C</title>
-      <link>/tags/c/</link>
+      <link>https://team317.gitee.io/blog/tags/c/</link>
       <pubDate>Wed, 19 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/c/</guid>
+      <guid>https://team317.gitee.io/blog/tags/c/</guid>
       <description></description>
     </item>
     
     <item>
       <title>json</title>
-      <link>/tags/json/</link>
+      <link>https://team317.gitee.io/blog/tags/json/</link>
       <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/json/</guid>
+      <guid>https://team317.gitee.io/blog/tags/json/</guid>
       <description></description>
     </item>
     
     <item>
       <title>爬虫</title>
-      <link>/tags/%E7%88%AC%E8%99%AB/</link>
+      <link>https://team317.gitee.io/blog/tags/%E7%88%AC%E8%99%AB/</link>
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/%E7%88%AC%E8%99%AB/</guid>
+      <guid>https://team317.gitee.io/blog/tags/%E7%88%AC%E8%99%AB/</guid>
       <description></description>
     </item>
     
     <item>
       <title>网络</title>
-      <link>/tags/%E7%BD%91%E7%BB%9C/</link>
+      <link>https://team317.gitee.io/blog/tags/%E7%BD%91%E7%BB%9C/</link>
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/%E7%BD%91%E7%BB%9C/</guid>
+      <guid>https://team317.gitee.io/blog/tags/%E7%BD%91%E7%BB%9C/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mysql</title>
-      <link>/tags/mysql/</link>
+      <link>https://team317.gitee.io/blog/tags/mysql/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/mysql/</guid>
+      <guid>https://team317.gitee.io/blog/tags/mysql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>动态内存</title>
-      <link>/tags/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98/</link>
+      <link>https://team317.gitee.io/blog/tags/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98/</link>
       <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98/</guid>
+      <guid>https://team317.gitee.io/blog/tags/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98/</guid>
       <description></description>
     </item>
     
     <item>
       <title>html</title>
-      <link>/tags/html/</link>
+      <link>https://team317.gitee.io/blog/tags/html/</link>
       <pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/html/</guid>
+      <guid>https://team317.gitee.io/blog/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>汇编</title>
-      <link>/tags/%E6%B1%87%E7%BC%96/</link>
+      <link>https://team317.gitee.io/blog/tags/%E6%B1%87%E7%BC%96/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/%E6%B1%87%E7%BC%96/</guid>
+      <guid>https://team317.gitee.io/blog/tags/%E6%B1%87%E7%BC%96/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Basic Elements</title>
-      <link>/tags/basic-elements/</link>
+      <link>https://team317.gitee.io/blog/tags/basic-elements/</link>
       <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/basic-elements/</guid>
+      <guid>https://team317.gitee.io/blog/tags/basic-elements/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CSS</title>
-      <link>/tags/css/</link>
+      <link>https://team317.gitee.io/blog/tags/css/</link>
       <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/css/</guid>
+      <guid>https://team317.gitee.io/blog/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>development</title>
-      <link>/tags/development/</link>
+      <link>https://team317.gitee.io/blog/tags/development/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/tags/development/</guid>
+      <guid>https://team317.gitee.io/blog/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>go</title>
-      <link>/tags/go/</link>
+      <link>https://team317.gitee.io/blog/tags/go/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/tags/go/</guid>
+      <guid>https://team317.gitee.io/blog/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>golang</title>
-      <link>/tags/golang/</link>
+      <link>https://team317.gitee.io/blog/tags/golang/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/tags/golang/</guid>
+      <guid>https://team317.gitee.io/blog/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>/tags/hugo/</link>
+      <link>https://team317.gitee.io/blog/tags/hugo/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/tags/hugo/</guid>
+      <guid>https://team317.gitee.io/blog/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>templates</title>
-      <link>/tags/templates/</link>
+      <link>https://team317.gitee.io/blog/tags/templates/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/tags/templates/</guid>
+      <guid>https://team317.gitee.io/blog/tags/templates/</guid>
       <description></description>
     </item>
     
     <item>
       <title>themes</title>
-      <link>/tags/themes/</link>
+      <link>https://team317.gitee.io/blog/tags/themes/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/tags/themes/</guid>
+      <guid>https://team317.gitee.io/blog/tags/themes/</guid>
       <description></description>
     </item>
     

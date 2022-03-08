@@ -1,5 +1,5 @@
-baseurl = ""
-title = "Mainroad"
+baseurl = "https://team317.gitee.io/blog"
+title = "Team317"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
@@ -34,7 +34,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 
 [Params.widgets]
-  recent_num = 4 # Set the number of articles in the "Recent articles" widget
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget, max number is 6
   categories_counter = false # Enable counter for each category in "Categories" widget
   tags_counter = false # Enable counter for each tag in "Tags" widget
 
