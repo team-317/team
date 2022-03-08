@@ -19,10 +19,10 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   authorbox = true
   pager = true
   post_meta = ["date", "categories"] # Order of post meta information
-  mainSections = ["post", "docs"]
+  mainSections = ["python笔记"]  # 这里所列文件夹中的内容将会展示在主页面上
 
 [Params.logo]
-  subtitle = "欢迎来到我的博客空间" # Logo subtitle
+  subtitle = "欢迎访问我的博客空间" # Logo subtitle
 
 [Params.sidebar]
   home = "right"   # Configure layout for home page
@@ -35,8 +35,8 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget, max number is 6
-  categories_counter = false # Enable counter for each category in "Categories" widget
-  tags_counter = false # Enable counter for each tag in "Tags" widget
+  categories_counter = true # Enable counter for each category in "Categories" widget
+  tags_counter = true # Enable counter for each tag in "Tags" widget
 
 
 [Params.widgets.social]

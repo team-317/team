@@ -13,40 +13,8 @@
       <pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/queue%E7%9A%84putjoin%E5%92%8Ctask_one/</guid>
-      <description>&lt;p&gt;在学习&lt;strong&gt;Queue&lt;/strong&gt;时&lt;strong&gt;task_one&lt;/strong&gt;时让我迷惑了很久，理清之后写下了这篇笔记。&lt;/p&gt;
+      <description>&lt;p&gt;在学习&lt;strong&gt;Queue&lt;/strong&gt;时&lt;strong&gt;task_one&lt;/strong&gt;时让我困惑了很久，理清之后写下了这篇笔记。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;python&lt;/strong&gt;中的&lt;strong&gt;queue&lt;/strong&gt;库提供了一个线程安全的类&lt;strong&gt;Queue&lt;/strong&gt;，它和普通的队列一样具有先进先出的特点，不同的在于它对与空队列的处理。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Getting started</title>
-      <link>https://team317.gitee.io/docs/getting-started/</link>
-      <pubDate>Mon, 24 Jan 2022 14:00:00 +0000</pubDate>
-      
-      <guid>https://team317.gitee.io/docs/getting-started/</guid>
-      <description>&lt;p&gt;Welcome to the Mainroad theme documentation. This quick start guide covers Mainroad theme installation and minimal
-configuration and is intended for intermediate to advanced users. To understand this guide, you need to be familiar
-with the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Customization</title>
-      <link>https://team317.gitee.io/docs/customization/</link>
-      <pubDate>Mon, 24 Jan 2022 14:00:00 +0000</pubDate>
-      
-      <guid>https://team317.gitee.io/docs/customization/</guid>
-      <description>&lt;p&gt;Customization page describes common Mainroad configuration parameters which can be specified via configuration file or
-via Front Matter section. That includes logo section tuning, adding a sidebar with widgets, adjusting highlight color,
-and more.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Frequently asked questions (FAQ)</title>
-      <link>https://team317.gitee.io/docs/faq/</link>
-      <pubDate>Mon, 24 Jan 2022 14:00:00 +0000</pubDate>
-      
-      <guid>https://team317.gitee.io/docs/faq/</guid>
-      <description>&lt;p&gt;Browse this FAQ page to find answers to frequently asked questions that have not been covered elsewhere
-in the documentation.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -83,25 +51,6 @@ in the documentation.&lt;/p&gt;</description>
 &lt;li&gt;?(0次或1次):可以这么理解，“？”表示“要不要重复”，那结果就只能是“要(1次)”和“不要(0次)”&lt;/li&gt;
 &lt;li&gt;+(1次或多次):可以理解为重复次数加n，n取(0，n)，但由于本身匹配一次，所以至少会重复一次。&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://team317.gitee.io/menu/blogs/</link>
-      <pubDate>Tue, 25 Jan 2022 14:00:00 +0000</pubDate>
-      
-      <guid>https://team317.gitee.io/menu/blogs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://team317.gitee.io/menu/about/</link>
-      <pubDate>Tue, 25 Jan 2022 14:00:00 +0000</pubDate>
-      
-      <guid>https://team317.gitee.io/menu/about/</guid>
-      <description>Our website builds with Hugo static site generator and Mainroad theme. This demo allows you to see what Mainroad based website looks like before deciding to go with it. Just keep in mind that the current demo shows the basics, a small part of what the combination of Hugo and Mainroad can do.
-About Mainroad Mainroad is a responsive, simple, clean and content-focused Hugo theme based on the MH Magazine lite WordPress theme.</description>
     </item>
     
     <item>
@@ -268,43 +217,6 @@ About Mainroad Mainroad is a responsive, simple, clean and content-focused Hugo 
       <guid>https://team317.gitee.io/%E7%AE%97%E6%B3%95/%E8%AE%A1%E6%95%B0%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E4%BD%8D%E6%95%B0/</guid>
       <description>&lt;p&gt;&lt;strong&gt;问题概述：&lt;/strong&gt; 从键盘上输入一个二进制数，统计其中1的位数并输出统计结果&lt;/p&gt;
 &lt;p&gt;C++实现过程中的关键：从键盘上得到的数据依变量类型存储为相应的类型，如果将输入类型定义为整型，则在读取中只会按十进制形式进行存储，如输入二进制数，读取到十进制变量中将变成所以用整型变量存储回使数据信息改变，在C++中，可以用字符串存储，定义一个string对象，用字符的方式处理。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Basic HTML Elements</title>
-      <link>https://team317.gitee.io/menu/basic-elements/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://team317.gitee.io/menu/basic-elements/</guid>
-      <description>&lt;p&gt;The main purpose of this article is to make sure that all basic HTML Elements are decorated with CSS so as to not miss any possible elements when creating new themes for Hugo.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>https://team317.gitee.io/menu/hugo-template-primer/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://team317.gitee.io/menu/hugo-template-primer/</guid>
-      <description>&lt;p&gt;Hugo uses the excellent &lt;a href=&#34;https://golang.org/&#34;&gt;Go&lt;/a&gt; &lt;a href=&#34;https://golang.org/pkg/html/template/&#34;&gt;html/template&lt;/a&gt; library for
-its template engine. It is an extremely lightweight engine that provides a very
-small amount of logic. In our experience that it is just the right amount of
-logic to be able to create a good static website. If you have used other
-template systems from different languages or frameworks you will find a lot of
-similarities in Go templates.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://team317.gitee.io/menu/getting-started-with-hugo/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://team317.gitee.io/menu/getting-started-with-hugo/</guid>
-      <description>Step 1. Install Hugo Go to Hugo releases and download the appropriate version for your OS and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at Install Hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the Hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
     </item>
     
   </channel>

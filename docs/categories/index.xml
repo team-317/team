@@ -8,15 +8,6 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>python笔记</title>
-      <link>https://team317.gitee.io/categories/python%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://team317.gitee.io/categories/python%E7%AC%94%E8%AE%B0/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>数据处理</title>
       <link>https://team317.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
@@ -31,6 +22,15 @@
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://team317.gitee.io/categories/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python笔记</title>
+      <link>https://team317.gitee.io/categories/python%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://team317.gitee.io/categories/python%E7%AC%94%E8%AE%B0/</guid>
       <description></description>
     </item>
     
@@ -67,24 +67,6 @@
       <pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://team317.gitee.io/categories/htmlcssjs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Development</title>
-      <link>https://team317.gitee.io/categories/development/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://team317.gitee.io/categories/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>golang</title>
-      <link>https://team317.gitee.io/categories/golang/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://team317.gitee.io/categories/golang/</guid>
       <description></description>
     </item>
     

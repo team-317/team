@@ -13,7 +13,7 @@
       <pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/queue%E7%9A%84putjoin%E5%92%8Ctask_one/</guid>
-      <description>&lt;p&gt;在学习&lt;strong&gt;Queue&lt;/strong&gt;时&lt;strong&gt;task_one&lt;/strong&gt;时让我迷惑了很久，理清之后写下了这篇笔记。&lt;/p&gt;
+      <description>&lt;p&gt;在学习&lt;strong&gt;Queue&lt;/strong&gt;时&lt;strong&gt;task_one&lt;/strong&gt;时让我困惑了很久，理清之后写下了这篇笔记。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;python&lt;/strong&gt;中的&lt;strong&gt;queue&lt;/strong&gt;库提供了一个线程安全的类&lt;strong&gt;Queue&lt;/strong&gt;，它和普通的队列一样具有先进先出的特点，不同的在于它对与空队列的处理。&lt;/p&gt;</description>
     </item>
     
