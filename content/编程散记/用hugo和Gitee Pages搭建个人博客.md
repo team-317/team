@@ -44,6 +44,6 @@ git push
 
 但是！！！Gitee Pages的个人版在上传后不会自动重新更新博客，所以还得在Gitee Pages服务中点击"更新":
 
-![](https://raw.githubusercontent.com/Tom-DaLin/Pictures/main/img/20220308211858.png?token=AMTBVRRK3RQR62RYIOP7F2TCE5MAA)
+![](https://gitee.com/Team317/pictures/raw/master/images/20220308213341.png)
 
 更新后可能由于浏览器对网页进行了缓存，还需要再等上几分钟才能看到更新后的博客。
