@@ -3,7 +3,10 @@ title: About
 date: 2022-01-25T14:00:00.000Z
 authorbox: false
 sidebar: false
-menu: main
+menu:
+  main:
+    name: About Me
+    weight: 5
 ---
 
 Our website builds with [Hugo](https://gohugo.io/) static site generator and
