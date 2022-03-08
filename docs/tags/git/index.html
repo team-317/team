@@ -4,19 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Ubuntu命令简记 - Team317</title>
+	<title>git - Team317</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="Ubuntu命令简记" />
-<meta property="og:description" content="以下是初学Ubuntu命令的一次学习记录
-
-history    显示在该终端使用过的所有命令；
-history |grep sudo*   显示在该终端中使用过且包含字符“sudo”的所有命令；
-" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/ubuntu%E5%91%BD%E4%BB%A4%E7%AE%80%E8%AE%B0/" /><meta property="article:section" content="编程散记" />
-<meta property="article:published_time" content="2020-11-09T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-11-09T00:00:00+00:00" />
+		<meta property="og:title" content="git" />
+<meta property="og:description" content="John Doe&#39;s Personal blog about everything" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://team317.gitee.io/tags/git/" />
 
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +20,7 @@ history |grep sudo*   显示在该终端中使用过且包含字符“sudo”的
 
 	<link rel="stylesheet" href="/css/style.css">
 	
+	<link rel="alternate" type="application/rss+xml" href="/tags/git/index.xml" title="Team317">
 
 	<link rel="shortcut icon" href="/favicon.ico">
 		
@@ -49,107 +44,38 @@ history |grep sudo*   显示在该终端中使用过且包含字符“sudo”的
 		<div class="wrapper flex">
 			<div class="primary">
 			
-<main class="main" role="main">
-	<article class="post">
-		<header class="post__header">
-			<h1 class="post__title">Ubuntu命令简记</h1>
-			<div class="post__meta meta">
+<main class="main list" role="main">
+	<header class="main__header">
+		<h1 class="main__title">git</h1>
+	</header><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E7%94%A8hugo%E5%92%8Cgitee-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="bookmark">
+			用hugo和Gitee Pages搭建个人博客
+			</a>
+		</h2>
+		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-11-09T00:00:00Z">November 09, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/" rel="category">编程散记</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-03-08T00:00:00Z">March 08, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/" rel="category">编程散记</a>
 	</span>
 </div></div>
-		</header>
-		<div class="content post__content clearfix">
-			<p>以下是初学Ubuntu命令的一次学习记录</p>
-<ul>
-<li><code>history</code>    显示在该终端使用过的所有命令；</li>
-<li><code>history |grep sudo*</code>   显示在该终端中使用过且包含字符“sudo”的所有命令；</li>
-</ul>
-<ul>
-<li><code>!!</code>  获得上一条指令，可和sudo搭配；</li>
-<li><code>cd -</code>  进入上一次所在目录，相当于windows文件资源管理器左上方的‘←’；</li>
-<li><code>mkdir</code>  创建文件夹；</li>
-<li><code>vi</code>  编辑文件，如果没有文件则创建该文件；</li>
-<li><code>pwd</code>  显示当前文件路径</li>
-<li><code>apt</code>  集合了apt-update、apt-cache、apt-get等命令的功能；</li>
-<li><code>find -name lib*</code>  寻找并显示含有&quot;lib&quot;字符串的文件</li>
-<li><code>chmod</code>  修改文件的权限，如chmod  777 test1.cpp；（由vi创建的文件用户似乎不具备读写权限）</li>
-<li><code>ls -la</code>  列出当前文件夹下各文件和文件夹的权限；</li>
-<li><code>ln -s source target</code>  source和target是两个文件（绝对路径），ln的作用是将target文件软链接到source文件上；</li>
-<li><code>wget</code>  根据下载链接下载文件；</li>
-<li><code>unzip</code>  解压文件；</li>
-</ul>
-<p>文件的权限：
-<code>drwxrwxrwx</code></p>
-<ul>
-<li>d代表目录，如果是文件则为<code>-</code></li>
-</ul>
-<p>后面有三个重复的&rsquo;rwx&rsquo;分别表示超级用户、普通用户、程序用户对于文件或文件夹的权限；</p>
-<ul>
-<li>r为读权限； 代号为4</li>
-<li>w为写权限；代号为2</li>
-<li>x为打开权限；代号为1</li>
-</ul>
-<p>可用<code>chmod</code>修改文件/文件夹的权限；
-如<code>chmod 555 test1.cpp </code>表示分别赋予超级用户、普通用户、程序用户对于test1.cpp的4+1=5权限，4+1即<code>4(r)+1(x)</code>表示读取和打开权限；</p>
-<p>关于vi的操作：
-三种模式切换：</p>
-<ul>
-<li>Esc键切换到命令行模式
-<code>ctrl+f</code> 向下翻屏；
-<code>ctrl+b</code> 向上翻屏；</li>
-<li><code>shift+:</code>切换到末行模式
-<code>:q!</code> 强制退出；
-<code>w</code> 保存；
-<code>wq</code> 保存并退出；</li>
-<li>按<code>i</code>进入文本输入模式</li>
-</ul>
-<p>在windows的应用商店上下了Ubuntu20.04 LTS，并通过软链接（和桌面快捷方式相似）转移到了单独的E盘，下午结合之前接触的内容好好探索了一下Ubuntu，更熟悉了一些。</p>
-		</div>
-		<footer class="post__footer">
-			
-<div class="post__tags tags clearfix">
-	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
-	<ul class="tags__list">
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/linux/" rel="tag">linux</a>
-		</li>
-	</ul>
-</div>
-		</footer>
-	</article>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>在本地搭建hugo博客并不麻烦，麻烦的在于上传到gitee或github，这里重点记录gitee pages的创建，创建过程也可以参考下面的一个视频：
+<a href="https://www.zhihu.com/zvideo/1356065680542957568">Hugo静态网站生成器，托管GitHub/Gitee Pages搭建个人站点 - 知乎
+</a></p>
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E7%94%A8hugo%E5%92%8Cgitee-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">Read more…</a>
+	</div>
+</article>
 </main>
-
-<div class="authorbox clearfix">
-	<figure class="authorbox__avatar">
-		<img alt="Team317 avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
-	</figure>
-	<div class="authorbox__header">
-		<span class="authorbox__name">About Team317</span>
-	</div>
-	<div class="authorbox__description">
-		所有事物都在发展，每个人都在不断成长，我也在向前推进着。
-	</div>
-</div>
-
-<nav class="pager flex">
-	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E6%B1%87%E7%BC%96%E5%A4%8D%E5%88%B6%E6%8C%87%E4%BB%A4%E6%AE%B5/" rel="prev">
-			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">汇编复制指定段</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AF%BB%E5%8F%96%E6%98%A0%E5%83%8F%E6%96%87%E4%BB%B6/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">虚拟机读取映像文件</p>
-		</a>
-	</div>
-</nav>
 
 
 			</div>
-			<aside class="sidebar"><div class="widget-search widget">
+			
+<aside class="sidebar"><div class="widget-search widget">
 	<form class="widget-search__form" role="search" method="get" action="https://duckduckgo.com/">
 		<label>
 			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">

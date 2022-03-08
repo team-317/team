@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Team317</title>
+    <link>https://team317.gitee.io/tags/git/</link>
+    <description>Recent content in git on Team317</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用hugo和Gitee Pages搭建个人博客</title>
+      <link>https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E7%94%A8hugo%E5%92%8Cgitee-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E7%94%A8hugo%E5%92%8Cgitee-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>&lt;p&gt;在本地搭建hugo博客并不麻烦，麻烦的在于上传到gitee或github，这里重点记录gitee pages的创建，创建过程也可以参考下面的一个视频：
+&lt;a href=&#34;https://www.zhihu.com/zvideo/1356065680542957568&#34;&gt;Hugo静态网站生成器，托管GitHub/Gitee Pages搭建个人站点 - 知乎
+&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
