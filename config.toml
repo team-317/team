@@ -1,4 +1,4 @@
-baseurl = "https://team317.gitee.io/blog"
+baseurl = "https://team317.gitee.io/"
 title = "Team317"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
@@ -15,14 +15,14 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   description = "John Doe's Personal blog about everything" # Description of your site
   opengraph = true
   twitter_cards = false
-  readmore = false # Show "Read more" button in list if true
+  readmore = true # Show "Read more" button in list if true
   authorbox = true
   pager = true
   post_meta = ["date", "categories"] # Order of post meta information
   mainSections = ["post", "docs"]
 
 [Params.logo]
-  subtitle = "Just another site" # Logo subtitle
+  subtitle = "欢迎来到我的博客空间" # Logo subtitle
 
 [Params.sidebar]
   home = "right"   # Configure layout for home page

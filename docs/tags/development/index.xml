@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>development on Team317</title>
-    <link>https://team317.gitee.io/blog/tags/development/</link>
+    <link>https://team317.gitee.io/tags/development/</link>
     <description>Recent content in development on Team317</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/blog/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/tags/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>(Hu)go Template Primer</title>
-      <link>https://team317.gitee.io/blog/post/hugo-template-primer/</link>
+      <link>https://team317.gitee.io/post/hugo-template-primer/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/post/hugo-template-primer/</guid>
+      <guid>https://team317.gitee.io/post/hugo-template-primer/</guid>
       <description>&lt;p&gt;Hugo uses the excellent &lt;a href=&#34;https://golang.org/&#34;&gt;Go&lt;/a&gt; &lt;a href=&#34;https://golang.org/pkg/html/template/&#34;&gt;html/template&lt;/a&gt; library for
 its template engine. It is an extremely lightweight engine that provides a very
 small amount of logic. In our experience that it is just the right amount of
@@ -23,10 +23,10 @@ similarities in Go templates.&lt;/p&gt;</description>
     
     <item>
       <title>Getting Started with Hugo</title>
-      <link>https://team317.gitee.io/blog/post/getting-started-with-hugo/</link>
+      <link>https://team317.gitee.io/post/getting-started-with-hugo/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/post/getting-started-with-hugo/</guid>
+      <guid>https://team317.gitee.io/post/getting-started-with-hugo/</guid>
       <description>Step 1. Install Hugo Go to Hugo releases and download the appropriate version for your OS and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at Install Hugo

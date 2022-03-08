@@ -2,18 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C on Team317</title>
-    <link>https://team317.gitee.io/blog/tags/c/</link>
+    <link>https://team317.gitee.io/tags/c/</link>
     <description>Recent content in C on Team317</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/blog/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/tags/c/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>C语言宏操作</title>
-      <link>https://team317.gitee.io/blog/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/c%E8%AF%AD%E8%A8%80%E5%AE%8F%E6%93%8D%E4%BD%9C/</link>
+      <title>刷题语言基础用法</title>
+      <link>https://team317.gitee.io/%E7%AE%97%E6%B3%95/%E5%88%B7%E9%A2%98%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://team317.gitee.io/%E7%AE%97%E6%B3%95/%E5%88%B7%E9%A2%98%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E7%94%A8%E6%B3%95/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;刷题建议&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;多练简单题，多练简单题，多练简单题。&lt;/p&gt;
+&lt;p&gt;中难题前期没必要练，因为基础不够，算法方面做好长期处于初级阶段的觉悟，因为算法的思路需要积累，不是学完数据结构就可以。&lt;/p&gt;
+&lt;p&gt;简单题也能提供很多解题技巧，把这些技巧学会了，再来挑战中难题也就有底子了。&lt;/p&gt;
+&lt;p&gt;前期挑战中难题浪费时间，而且心态容易崩。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>C语言函数指针</title>
+      <link>https://team317.gitee.io/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/%E5%87%BD%E6%95%B0%E6%8C%87%E9%92%88/</link>
       <pubDate>Wed, 19 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/c%E8%AF%AD%E8%A8%80%E5%AE%8F%E6%93%8D%E4%BD%9C/</guid>
-      <description>&lt;h2 id=&#34;编译和宏&#34;&gt;编译和宏&lt;/h2&gt;
+      <guid>https://team317.gitee.io/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/%E5%87%BD%E6%95%B0%E6%8C%87%E9%92%88/</guid>
+      <description>&lt;h3 id=&#34;引入&#34;&gt;引入&lt;/h3&gt;
+&lt;p&gt;函数指针用的比较少，从上面的代码中可以感性的了解到&lt;strong&gt;函数指针和函数声明很相似&lt;/strong&gt;，不同的是&lt;strong&gt;函数指针的名字外面需要用括号括起来&lt;/strong&gt;，在python中函数可以当成变量放置在数组中进行调用，使用C语言函数指针，也可以达到同样的效果。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>C语言宏操作</title>
+      <link>https://team317.gitee.io/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/c%E8%AF%AD%E8%A8%80%E5%AE%8F%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Wed, 19 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://team317.gitee.io/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/c%E8%AF%AD%E8%A8%80%E5%AE%8F%E6%93%8D%E4%BD%9C/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;编译和宏&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;编译可分为两个阶段：编译和链接&lt;/p&gt;
 &lt;p&gt;step1:编译阶段进行语法检查&lt;/p&gt;
 &lt;p&gt;step2:链接阶段将各个相互关联的模块拼接在一起&lt;/p&gt;</description>
@@ -21,12 +44,11 @@
     
     <item>
       <title>用C创建记录型文件</title>
-      <link>https://team317.gitee.io/blog/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/%E7%94%A8c%E5%88%9B%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%96%87%E4%BB%B6/</link>
+      <link>https://team317.gitee.io/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/%E7%94%A8c%E5%88%9B%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%96%87%E4%BB%B6/</link>
       <pubDate>Fri, 30 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/%E7%94%A8c%E5%88%9B%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%96%87%E4%BB%B6/</guid>
-      <description>&lt;p&gt;@[toc]&lt;/p&gt;
-&lt;h3 id=&#34;任务概述&#34;&gt;任务概述&lt;/h3&gt;
+      <guid>https://team317.gitee.io/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/%E7%94%A8c%E5%88%9B%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%96%87%E4%BB%B6/</guid>
+      <description>&lt;h3 id=&#34;任务概述&#34;&gt;任务概述&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;简单的创建一个记录型文件&lt;/p&gt;
 &lt;/blockquote&gt;

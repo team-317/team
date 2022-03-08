@@ -6,9 +6,8 @@ categories:
   - "C语言笔记"
 tags:  
   - "C"
+notoc: true
 ---
-@[toc]
-
 ### 任务概述
 > 简单的创建一个记录型文件
 

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>正则表达式 on Team317</title>
-    <link>https://team317.gitee.io/blog/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+    <link>https://team317.gitee.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
     <description>Recent content in 正则表达式 on Team317</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/blog/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>正则表达式小结</title>
-      <link>https://team317.gitee.io/blog/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%B0%8F%E7%BB%93/</link>
+      <link>https://team317.gitee.io/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%B0%8F%E7%BB%93/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%B0%8F%E7%BB%93/</guid>
+      <guid>https://team317.gitee.io/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%B0%8F%E7%BB%93/</guid>
       <description>&lt;p&gt;&lt;strong&gt;正则表达式的重复次数&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;?(0次或1次):可以这么理解，“？”表示“要不要重复”，那结果就只能是“要(1次)”和“不要(0次)”&lt;/li&gt;
@@ -22,21 +22,16 @@
     
     <item>
       <title>正则表达式匹配强密码解析</title>
-      <link>https://team317.gitee.io/blog/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D%E5%BC%BA%E5%AF%86%E7%A0%81/</link>
+      <link>https://team317.gitee.io/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D%E5%BC%BA%E5%AF%86%E7%A0%81/</link>
       <pubDate>Fri, 10 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D%E5%BC%BA%E5%AF%86%E7%A0%81/</guid>
-      <description>密码要求：
-1 至少含有一个小写字母；
-2 至少含有一个大写字母；
-3 至少含有一个数字；
-4 至少含有一个特殊字符；
-5 密码长度要求八个字符及以上；
-^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#\$%\^&amp;amp;\*\(\)]).{8,} 这个正则表达式可以分成两个部分，分别为^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\!\@\#\$\%\^\&amp;amp;\*\(\)])和.{8,}，我们拆开分析。
-先看第一部分^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\!\@\#\$\%\^\&amp;amp;\*\(\)])，从左到右看，第一个字符是^，表示字符的开头，后面接着的是四个后行断言(?=.*[a-z])、(?=.*[A-Z])、(?=.*\d)、(?=.*[\!\@\#\$\%\^\&amp;amp;\*\(\)])，他们形式相似，先挑第一个进行分析。
-(?=.*[a-z])置于正则表达式^之后，表示在字符开头之后需要出现.*[a-z]才能匹配，而.*[a-z]表示需要出现小写字母。所以^(?=.*[a-z])表示在字符中需要出现一个小写字符。随后的三个断言的含义依次为：字符中要求出现一个大写字母、字符中要求出现一个数字、字符中要求出现一个特殊字符。组合起来即为：字符中要求出现小写字母，大写字母、一个数字、一个特殊字符。
-再看第二部分.{8,}，表示一个长度至少为8的任意字符。
-最后将两个部分组合起来，即为强密码的要求：要求出现一个小写字母、大写字符、数字和特殊字符，以及字符长度至少为8。这里有一点需要注意：^之后的后行断言所匹配的内容虽然在第一个部分中不会捕获，但是却可以被第二部分捕获。</description>
+      <guid>https://team317.gitee.io/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D%E5%BC%BA%E5%AF%86%E7%A0%81/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;密码要求：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1 至少含有一个小写字母；&lt;/p&gt;
+&lt;p&gt;2 至少含有一个大写字母；&lt;/p&gt;
+&lt;p&gt;3 至少含有一个数字；&lt;/p&gt;
+&lt;p&gt;4 至少含有一个特殊字符；&lt;/p&gt;
+&lt;p&gt;5 密码长度要求八个字符及以上；&lt;/p&gt;</description>
     </item>
     
   </channel>

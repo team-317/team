@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>刷题语言基础用法 - Team317</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="刷题语言基础用法" />
+<meta property="og:description" content="刷题建议
+多练简单题，多练简单题，多练简单题。
+中难题前期没必要练，因为基础不够，算法方面做好长期处于初级阶段的觉悟，因为算法的思路需要积累，不是学完数据结构就可以。
+简单题也能提供很多解题技巧，把这些技巧学会了，再来挑战中难题也就有底子了。
+前期挑战中难题浪费时间，而且心态容易崩。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://team317.gitee.io/%E7%AE%97%E6%B3%95/%E5%88%B7%E9%A2%98%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E7%94%A8%E6%B3%95/" /><meta property="article:section" content="算法" />
+<meta property="article:published_time" content="2021-08-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-20T00:00:00+00:00" />
+
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Team317" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Team317</div>
+					<div class="logo__tagline">欢迎来到我的博客空间</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/docs/getting-started/">
+				
+				<span class="menu__text">Getting started</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/docs/customization/">
+				
+				<span class="menu__text">Customization</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/docs/faq/">
+				
+				<span class="menu__text">FAQ</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/basic-elements/">
+				
+				<span class="menu__text">Basic Elements</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">刷题语言基础用法</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-08-20T00:00:00Z">August 20, 2021</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%E7%AE%97%E6%B3%95/" rel="category">算法</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p><strong>刷题建议</strong></p>
+<p>多练简单题，多练简单题，多练简单题。</p>
+<p>中难题前期没必要练，因为基础不够，算法方面做好长期处于初级阶段的觉悟，因为算法的思路需要积累，不是学完数据结构就可以。</p>
+<p>简单题也能提供很多解题技巧，把这些技巧学会了，再来挑战中难题也就有底子了。</p>
+<p>前期挑战中难题浪费时间，而且心态容易崩。</p>
+<h2 id="语言基础">语言基础</h2>
+<h3 id="c基本操作">C++基本操作</h3>
+<h4 id="1容器">1、容器</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> arr;		<span style="color:#75715e">// 定义容器
+</span><span style="color:#75715e"></span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> arr(<span style="color:#ae81ff">9</span>);		<span style="color:#75715e">// 定义大小为9的容器
+</span><span style="color:#75715e"></span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> arr(<span style="color:#ae81ff">9</span>,<span style="color:#ae81ff">0</span>);	<span style="color:#75715e">// 定义大小为9，初始值为0的容器,leetcode不支持
+</span><span style="color:#75715e"></span>arr.size();				<span style="color:#75715e">// 获取容器的大小
+</span><span style="color:#75715e"></span>arr.push_back(x);		<span style="color:#75715e">// 将值x放入容器末尾
+</span><span style="color:#75715e"></span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> arr[<span style="color:#ae81ff">9</span>];		<span style="color:#75715e">// 定义一个长度为9的vector&lt;int&gt;数组，数组的每个元素都是vector&lt;int&gt;
+</span><span style="color:#75715e"></span>
+</code></pre></div><p>定义容器：vector&lt;int&gt; arr</p>
+<p>容器长度：arr.size()</p>
+<p>向容器中添加元素：arr.push_back(element)</p>
+<h4 id="2栈">2、栈</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">stack<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> st;	<span style="color:#75715e">// 定义栈方法
+</span><span style="color:#75715e"></span>st.empty();		<span style="color:#75715e">// 判断栈空，为空时返回true
+</span><span style="color:#75715e"></span>st.push(x);		<span style="color:#75715e">// 将值x压入栈顶
+</span><span style="color:#75715e"></span>st.top();		<span style="color:#75715e">// 返回栈顶元素
+</span><span style="color:#75715e"></span>st.pop();		<span style="color:#75715e">// 弹出栈顶元素
+</span></code></pre></div><h4 id="3队列">3、队列</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C++" data-lang="C++">queue<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> Q;	<span style="color:#75715e">// 定义队列
+</span><span style="color:#75715e"></span>Q.push(x);		<span style="color:#75715e">// 将x压入队尾
+</span><span style="color:#75715e"></span>Q.pop();		<span style="color:#75715e">// 弹出但不返回队尾元素
+</span><span style="color:#75715e"></span>Q.front();		<span style="color:#75715e">// 获取对头元素
+</span><span style="color:#75715e"></span>Q.back();		<span style="color:#75715e">// 获取队尾元素
+</span><span style="color:#75715e"></span>Q.empty();		<span style="color:#75715e">// 判断队列是否为空
+</span><span style="color:#75715e"></span>Q.size();		<span style="color:#75715e">// 获取队列大小
+</span><span style="color:#75715e"></span>
+</code></pre></div><h4 id="4字符串">4、字符串</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C++" data-lang="C++">string str<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;123&#34;</span>;		<span style="color:#75715e">// 定义字符串
+</span><span style="color:#75715e"></span>strlen(str);			<span style="color:#75715e">// 获取字符串长度
+</span><span style="color:#75715e"></span>str.size();				<span style="color:#75715e">// 获取字符串长度
+</span><span style="color:#75715e"></span>Integer.parseInt(str);	<span style="color:#75715e">// 将数字字符串转化为数字
+</span><span style="color:#75715e"></span>str.substr(index,len);	<span style="color:#75715e">// 获取str中从index开始，长为len的子串	
+</span></code></pre></div><p>注意，isnumber()不是标准的C/C++库函数。</p>
+<p>如果刷题时没有提供字符串转化为数字的函数，则需要自定义一个函数完成这一功能，在编写时需要注意处理负号。</p>
+<h4 id="5慎用mallochttpswwwcnblogscomfriedcoderp13098677html">5、<a href="https://www.cnblogs.com/friedCoder/p/13098677.html">慎用malloc</a></h4>
+<p>malloc是C语言中常用的内存申请方式，C++也支持，但是对于STL来说却不兼容，取而代之的是new。</p>
+<p>情景：曾写过一个C与C++混合的项目，内存申请使用了malloc，同时使用了std::vector，程序中两种结构之间进行了数据流通。但是程序运行时，部分指针的值被“莫名修改”，导致运行出错。</p>
+<p>使用gdb调试，观察相关变量的内存地址，发现std::vector竟然可以覆盖修改malloc此前申请的内存区域。明显std::vector<strong>不识别</strong>malloc申请的内存，将这部分内存标记为<strong>未使用</strong>状态。</p>
+<p>解决方法：将所有malloc改为new，解决问题。</p>
+<p>今天在leetcode中刷题用C++解题时，使用了malloc来申请空间，虽然过程没问题，但提交后不能通过。发现在本地运行能出正确结果，这才定位到是malloc的问题。</p>
+<h4 id="6哈希表">6、哈希表</h4>
+<p>在处理存在重复值的序列中作用较大。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">unordered_set<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> hash;	<span style="color:#75715e">// 定义一个哈希表
+</span><span style="color:#75715e"></span>hash.insert(x);				<span style="color:#75715e">// 将x加入到哈希表中
+</span><span style="color:#75715e"></span>hash.find(x);				<span style="color:#75715e">// 判断x是否在hash中
+</span><span style="color:#75715e">// find(x)返回等于end()表示没找到
+</span><span style="color:#75715e"></span>hash.find(x) <span style="color:#f92672">==</span> hash.end();	
+hash.erase(x);				<span style="color:#75715e">// 清除元素x
+</span><span style="color:#75715e"></span>hash.clear(x);				<span style="color:#75715e">// 清除所有元素
+</span><span style="color:#75715e"></span>hash.count(x);				<span style="color:#75715e">// 统计hash表中x的个数
+</span></code></pre></div><h4 id="7排序">7、排序</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> nums;
+sort(nums.begin(), nums.end());	<span style="color:#75715e">// 排序
+</span></code></pre></div><h4 id="8位运算">8、位运算</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">x <span style="color:#f92672">=</span> x<span style="color:#f92672">^</span>x;	<span style="color:#75715e">// 按位异或，可检测两个值是否相等
+</span><span style="color:#75715e"></span>x <span style="color:#f92672">^=</span> x;		<span style="color:#75715e">// 同上，具有交换律，即a^b^c = a^c^b
+</span></code></pre></div><p>异或运算的特点：a^b = c ， a^b^b = a， 即 c^b=a 同理 c^a =b</p>
+<h4 id="9基本类型">9、基本类型</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">int</span> max <span style="color:#f92672">=</span> INT32_MAX;	<span style="color:#75715e">// 整型的最大值
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> min <span style="color:#f92672">=</span> INT32_MIN;	<span style="color:#75715e">// 整型的最小值
+</span></code></pre></div><h3 id="c基本操作-1">C基本操作</h3>
+<h4 id="1数组">1、数组</h4>
+<p><strong>在函数中返回数组：</strong></p>
+<p>需要注意的是待返回的数组不能是函数中的局部变量，如：char str[100];</p>
+<p>若 return str，则返回后数组str所在的空间会被回收；</p>
+<p>定义时应改写为char *str = (char **)malloc(sizeof(char)*100);</p>
+<h3 id="java基本操作">Java基本操作</h3>
+<h4 id="1队列">1、队列</h4>
+<p>​	LinkedList 实现了 Queue 接口，可作为队列使用。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Queue<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">[]&gt;</span> q <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LinkedList<span style="color:#f92672">&lt;&gt;();</span>	<span style="color:#75715e">// 定义队列
+</span><span style="color:#75715e"></span>q<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>		<span style="color:#75715e">// 向队尾添加元素；
+</span><span style="color:#75715e"></span>q<span style="color:#f92672">.</span><span style="color:#a6e22e">poll</span><span style="color:#f92672">();</span>		<span style="color:#75715e">// 删除队首元素并返回该元素，队列为空时返回null；
+</span><span style="color:#75715e"></span>q<span style="color:#f92672">.</span><span style="color:#a6e22e">isEmpty</span><span style="color:#f92672">();</span>	<span style="color:#75715e">// 判断队列是否为空
+</span></code></pre></div><h4 id="2链表节点">2、链表节点</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// java中定义链表节点
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ListNode</span> <span style="color:#f92672">{</span>
+	<span style="color:#66d9ef">int</span> val<span style="color:#f92672">;</span>
+    ListNode next<span style="color:#f92672">;</span>
+    ListNode<span style="color:#f92672">()</span> <span style="color:#f92672">{}</span>
+    ListNode<span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> val<span style="color:#f92672">)</span> <span style="color:#f92672">{</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">val</span> <span style="color:#f92672">=</span> val<span style="color:#f92672">;</span> <span style="color:#f92672">}</span>
+    ListNode<span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> val<span style="color:#f92672">,</span> ListNode next<span style="color:#f92672">)</span> <span style="color:#f92672">{</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">val</span> <span style="color:#f92672">=</span> val<span style="color:#f92672">;</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> next<span style="color:#f92672">;</span> <span style="color:#f92672">}</span>
+ <span style="color:#f92672">}</span>
+<span style="color:#75715e">// 判断节点的后继是否为空
+</span><span style="color:#75715e"></span>ListNode node <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ListNode<span style="color:#f92672">();</span>
+<span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>node<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">){;}</span>
+
+</code></pre></div><h4 id="3数组arraylistlist">3、数组、ArrayList、List</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// 定义一个数组
+</span><span style="color:#75715e"></span>Integer<span style="color:#f92672">[</span>6<span style="color:#f92672">]</span> arr <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Integer<span style="color:#f92672">[];</span>
+<span style="color:#75715e">// 将数组转为ArrayList
+</span><span style="color:#75715e"></span>List<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> arr1 <span style="color:#f92672">=</span> Arrays<span style="color:#f92672">.</span><span style="color:#a6e22e">asList</span><span style="color:#f92672">(</span>arr<span style="color:#f92672">);</span>
+
+<span style="color:#75715e">// 定义一个ArrayList
+</span><span style="color:#75715e"></span>List<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> temp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+<span style="color:#75715e">// 向数组中添加元素x
+</span><span style="color:#75715e"></span>temp<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>x<span style="color:#f92672">);</span>
+<span style="color:#75715e">// 获取数组长度
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> len <span style="color:#f92672">=</span> temp<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">();</span>
+<span style="color:#75715e">// 获取数组temp中的第i个元素，
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> val <span style="color:#f92672">=</span> temp<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>i<span style="color:#f92672">);</span>	<span style="color:#75715e">// 不能使用temp[i];
+</span><span style="color:#75715e">// 定义一个二维数组
+</span><span style="color:#75715e"></span>List<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;&gt;</span> result <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+<span style="color:#75715e">// 将temp加入result
+</span><span style="color:#75715e"></span>result<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;(</span>temp<span style="color:#f92672">));</span>
+</code></pre></div><h4 id="4输出和integer">4、输出和Integer</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// 输出变量i和变量j的值
+</span><span style="color:#75715e"></span>System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;i,j: &#34;</span><span style="color:#f92672">+</span>i<span style="color:#f92672">+</span>j<span style="color:#f92672">);</span>
+
+<span style="color:#75715e">// 关于BigInteger    https://www.liaoxuefeng.com/wiki/1252599548343744/1279767986831393
+</span><span style="color:#75715e"></span>Integer max <span style="color:#f92672">=</span> Integer<span style="color:#f92672">.</span><span style="color:#a6e22e">MAX_VALUE</span><span style="color:#f92672">;</span>	<span style="color:#75715e">// 整型的最大值
+</span><span style="color:#75715e"></span>Integer min <span style="color:#f92672">=</span> Integer<span style="color:#f92672">.</span><span style="color:#a6e22e">MIN_VALUE</span><span style="color:#f92672">;</span>	<span style="color:#75715e">// 整型的最小值
+</span></code></pre></div><h4 id="5字符串">5、字符串</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">String str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;abcde&#34;</span><span style="color:#f92672">;</span>		<span style="color:#75715e">// 创建一个字符串
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">char</span> temp <span style="color:#f92672">=</span> str<span style="color:#f92672">.</span><span style="color:#a6e22e">charAt</span><span style="color:#f92672">(</span>i<span style="color:#f92672">);</span>	<span style="color:#75715e">// 第i个字符
+</span><span style="color:#75715e"></span>str <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;fgh&#34;</span><span style="color:#f92672">;</span>				<span style="color:#75715e">// 字符串连接
+</span><span style="color:#75715e"></span>str<span style="color:#f92672">.</span><span style="color:#a6e22e">substring</span><span style="color:#f92672">(</span>i<span style="color:#f92672">,</span>j<span style="color:#f92672">);</span>			<span style="color:#75715e">// 获取[i,j)之间的字符
+</span><span style="color:#75715e"></span>str<span style="color:#f92672">.</span><span style="color:#a6e22e">substring</span><span style="color:#f92672">(</span>i<span style="color:#f92672">);</span>			<span style="color:#75715e">// 获取[i,endl]之间的子串
+</span></code></pre></div><h4 id="6hash表">6、hash表</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// hash映射
+</span><span style="color:#75715e"></span>Map<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">,</span>Integer<span style="color:#f92672">&gt;</span> hash <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;();</span>	<span style="color:#75715e">// 定义一个hash映射集
+</span><span style="color:#75715e"></span>hash<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>key<span style="color:#f92672">,</span> val<span style="color:#f92672">);</span>		<span style="color:#75715e">// 将键值对&lt;key, val&gt;加入到hash映射中
+</span><span style="color:#75715e"></span>hash<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>key<span style="color:#f92672">);</span>			<span style="color:#75715e">// 获取key对应的val
+</span><span style="color:#75715e"></span>hash<span style="color:#f92672">.</span><span style="color:#a6e22e">containsKey</span><span style="color:#f92672">(</span>key<span style="color:#f92672">);</span>	<span style="color:#75715e">// 判断key是否已存在hash映射中
+</span></code></pre></div><h2 id="数组">数组</h2>
+<h3 id="1寻找数组的中心索引">1、寻找数组的中心索引</h3>
+<blockquote>
+<p>给你一个整数数组 nums，请编写一个能够返回数组 “中心下标” 的方法。</p>
+<p>数组 中心下标 是数组的一个下标，其左侧所有元素相加的和等于右侧所有元素相加的和。</p>
+<p>如果数组不存在中心下标，返回 -1 。如果数组有多个中心下标，应该返回最靠近左边的那一个。</p>
+<p>注意：中心下标可能出现在数组的两端。</p>
+</blockquote>
+<p><strong><code>前缀和</code> <code>preSum</code></strong></p>
+<p><a href="https://leetcode-cn.com/problems/find-pivot-index/solution/xiang-jie-presumhao-de-ti-jie-ying-gai-k-mzsg/">https://leetcode-cn.com/problems/find-pivot-index/solution/xiang-jie-presumhao-de-ti-jie-ying-gai-k-mzsg/</a></p>
+<h3 id="2搜索插入位置">2、搜索插入位置</h3>
+<blockquote>
+<p>给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。</p>
+<p>你可以假设数组中无重复元素。</p>
+</blockquote>
+<p><strong><code>二分查找</code></strong></p>
+<p><a href="https://leetcode-cn.com/problems/search-insert-position/solution/te-bie-hao-yong-de-er-fen-cha-fa-fa-mo-ban-python-/">https://leetcode-cn.com/problems/search-insert-position/solution/te-bie-hao-yong-de-er-fen-cha-fa-fa-mo-ban-python-/</a></p>
+<h2 id="二维数组简介">二维数组简介</h2>
+<h3 id="1零矩阵">1、零矩阵</h3>
+<blockquote>
+<p>编写一种算法，若M × N矩阵中某个元素为0，则将其所在的行与列清零。</p>
+</blockquote>
+<p><a href="https://leetcode-cn.com/problems/zero-matrix-lcci/solution/liang-ci-bian-li-si-lu-jian-dan-chao-996-r5tw/">https://leetcode-cn.com/problems/zero-matrix-lcci/solution/liang-ci-bian-li-si-lu-jian-dan-chao-996-r5tw/</a></p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/c/" rel="tag">C</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/java/" rel="tag">Java</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/c&#43;&#43;/" rel="tag">C&#43;&#43;</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Team317 avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Team317</span>
+	</div>
+	<div class="authorbox__description">
+		John Doe&rsquo;s true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it.
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/%E7%AE%97%E6%B3%95/%E8%AE%A1%E6%95%B0%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E4%BD%8D%E6%95%B0/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">计数二进制中1的位数</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://duckduckgo.com/">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sites" value="https://team317.gitee.io/"/>
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/docs/getting-started/">Getting started</a></li>
+			<li class="widget__item"><a class="widget__link" href="/docs/customization/">Customization</a></li>
+			<li class="widget__item"><a class="widget__link" href="/docs/faq/">Frequently asked questions (FAQ)</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/basic-elements/">Basic HTML Elements</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/hugo-template-primer/">(Hu)go Template Primer</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/c&#43;&#43;%E7%AC%94%E8%AE%B0/">C&#43;&#43;笔记</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/">C语言笔记</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/golang/">golang</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/htmlcssjs/">html&amp;css&amp;js</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/python%E7%AC%94%E8%AE%B0/">python笔记</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/">数据处理</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/">编程散记</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/basic-elements/" title="Basic Elements">Basic Elements</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/c/" title="C">C</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/c&#43;&#43;/" title="C&#43;&#43;">C&#43;&#43;</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/css/" title="CSS">CSS</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="development">development</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/go/" title="go">go</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/golang/" title="golang">golang</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/html/" title="html">html</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/installation/" title="Installation">Installation</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/java/" title="Java">Java</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/json/" title="json">json</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="linux">linux</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mysql/" title="mysql">mysql</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="python">python</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/templates/" title="templates">templates</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/themes/" title="themes">themes</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/" title="位运算">位运算</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98/" title="动态内存">动态内存</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" title="多线程">多线程</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="正则表达式">正则表达式</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%B1%87%E7%BC%96/" title="汇编">汇编</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E7%88%AC%E8%99%AB/" title="爬虫">爬虫</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E7%BD%91%E7%BB%9C/" title="网络">网络</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" title="虚拟机">虚拟机</a>
+	</div>
+</div>
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/Tom-DaLin" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Email" href="mailto:2629757717@qq.com">
+				<svg class="widget-social__link-icon icon icon-mail" width="24" height="24" viewBox="0 0 416 288"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg>
+				<span>2629757717@qq.com</span>
+			</a>
+		</div>
+
+		
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="CSDN" rel="noopener noreferrer" href="https://blog.csdn.net/GodNotAMen?type=blog" target="_blank">
+				<span>CSDN</span>
+			</a>
+		</div>
+		
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Team317.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

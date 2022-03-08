@@ -9,9 +9,10 @@ tags:
 ---
 
 
-### 不选中第一个元素
+### 选中第一个以外的元素
 排版一个天气网站，下面这部分页面由四个li组成，需要在每个li左侧插入一条竖线作为分割（这条竖线是一张图片），要求第一个li的背景图中不能插入竖线，则需要选中除第一个li之外的其他li插入图片。
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20201002094047860.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0dvZE5vdEFNZW4=,size_16,color_FFFFFF,t_70#pic_center)
+<!--more-->
 
 ```c
 .weather_list{

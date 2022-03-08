@@ -2,17 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Team317</title>
-    <link>https://team317.gitee.io/blog/</link>
+    <link>https://team317.gitee.io/</link>
     <description>Recent content on Team317</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Queue的put、join和task_one</title>
+      <link>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/queue%E7%9A%84putjoin%E5%92%8Ctask_one/</link>
+      <pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/queue%E7%9A%84putjoin%E5%92%8Ctask_one/</guid>
+      <description>&lt;p&gt;在学习&lt;strong&gt;Queue&lt;/strong&gt;时&lt;strong&gt;task_one&lt;/strong&gt;时让我迷惑了很久，理清之后写下了这篇笔记。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;python&lt;/strong&gt;中的&lt;strong&gt;queue&lt;/strong&gt;库提供了一个线程安全的类&lt;strong&gt;Queue&lt;/strong&gt;，它和普通的队列一样具有先进先出的特点，不同的在于它对与空队列的处理。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Getting started</title>
-      <link>https://team317.gitee.io/blog/docs/getting-started/</link>
+      <link>https://team317.gitee.io/docs/getting-started/</link>
       <pubDate>Mon, 24 Jan 2022 14:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/docs/getting-started/</guid>
+      <guid>https://team317.gitee.io/docs/getting-started/</guid>
       <description>&lt;p&gt;Welcome to the Mainroad theme documentation. This quick start guide covers Mainroad theme installation and minimal
 configuration and is intended for intermediate to advanced users. To understand this guide, you need to be familiar
 with the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator.&lt;/p&gt;</description>
@@ -20,10 +30,10 @@ with the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site g
     
     <item>
       <title>Customization</title>
-      <link>https://team317.gitee.io/blog/docs/customization/</link>
+      <link>https://team317.gitee.io/docs/customization/</link>
       <pubDate>Mon, 24 Jan 2022 14:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/docs/customization/</guid>
+      <guid>https://team317.gitee.io/docs/customization/</guid>
       <description>&lt;p&gt;Customization page describes common Mainroad configuration parameters which can be specified via configuration file or
 via Front Matter section. That includes logo section tuning, adding a sidebar with widgets, adjusting highlight color,
 and more.&lt;/p&gt;</description>
@@ -31,20 +41,30 @@ and more.&lt;/p&gt;</description>
     
     <item>
       <title>Frequently asked questions (FAQ)</title>
-      <link>https://team317.gitee.io/blog/docs/faq/</link>
+      <link>https://team317.gitee.io/docs/faq/</link>
       <pubDate>Mon, 24 Jan 2022 14:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/docs/faq/</guid>
+      <guid>https://team317.gitee.io/docs/faq/</guid>
       <description>&lt;p&gt;Browse this FAQ page to find answers to frequently asked questions that have not been covered elsewhere
 in the documentation.&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>知乎热榜爬取</title>
+      <link>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/%E7%9F%A5%E4%B9%8E%E7%83%AD%E6%A6%9C%E7%88%AC%E5%8F%96/</link>
+      <pubDate>Fri, 30 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/%E7%9F%A5%E4%B9%8E%E7%83%AD%E6%A6%9C%E7%88%AC%E5%8F%96/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;任务概述&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这次的任务是定时的爬取知乎热榜前十的标题，如果当前爬取的热榜较上一次有所变动，则将新增的标题打印出来。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Ubuntu命令简记</title>
-      <link>https://team317.gitee.io/blog/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/ubuntu%E5%91%BD%E4%BB%A4%E7%AE%80%E8%AE%B0/</link>
+      <link>https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/ubuntu%E5%91%BD%E4%BB%A4%E7%AE%80%E8%AE%B0/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/ubuntu%E5%91%BD%E4%BB%A4%E7%AE%80%E8%AE%B0/</guid>
+      <guid>https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/ubuntu%E5%91%BD%E4%BB%A4%E7%AE%80%E8%AE%B0/</guid>
       <description>&lt;p&gt;以下是初学Ubuntu命令的一次学习记录&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;history&lt;/code&gt;    显示在该终端使用过的所有命令；&lt;/li&gt;
@@ -54,10 +74,10 @@ in the documentation.&lt;/p&gt;</description>
     
     <item>
       <title>正则表达式小结</title>
-      <link>https://team317.gitee.io/blog/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%B0%8F%E7%BB%93/</link>
+      <link>https://team317.gitee.io/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%B0%8F%E7%BB%93/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%B0%8F%E7%BB%93/</guid>
+      <guid>https://team317.gitee.io/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%B0%8F%E7%BB%93/</guid>
       <description>&lt;p&gt;&lt;strong&gt;正则表达式的重复次数&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;?(0次或1次):可以这么理解，“？”表示“要不要重复”，那结果就只能是“要(1次)”和“不要(0次)”&lt;/li&gt;
@@ -66,71 +86,69 @@ in the documentation.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>计数二进制中1的位数</title>
-      <link>https://team317.gitee.io/blog/%E7%AE%97%E6%B3%95/%E8%AE%A1%E6%95%B0%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E4%BD%8D%E6%95%B0/</link>
-      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://team317.gitee.io/blog/%E7%AE%97%E6%B3%95/%E8%AE%A1%E6%95%B0%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E4%BD%8D%E6%95%B0/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;问题概述：&lt;/strong&gt; 从键盘上输入一个二进制数，统计其中1的位数并输出统计结果&lt;/p&gt;
-&lt;p&gt;C++实现过程中的关键：从键盘上得到的数据依变量类型存储为相应的类型，如果将输入类型定义为整型，则在读取中只会按十进制形式进行存储，如输入二进制数，读取到十进制变量中将变成所以用整型变量存储回使数据信息改变，在C++中，可以用字符串存储，定义一个string对象，用字符的方式处理。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Queue的put、join和task_one</title>
-      <link>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/queue%E7%9A%84putjoin%E5%92%8Ctask_one/</link>
-      <pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/queue%E7%9A%84putjoin%E5%92%8Ctask_one/</guid>
-      <description>&lt;p&gt;在学习&lt;strong&gt;Queue&lt;/strong&gt;时&lt;strong&gt;task_one&lt;/strong&gt;时让我迷惑了很久，理清之后写下了这篇笔记。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;python&lt;/strong&gt;中的&lt;strong&gt;queue&lt;/strong&gt;库提供了一个线程安全的类&lt;strong&gt;Queue&lt;/strong&gt;，它和普通的队列一样具有先进先出的特点，不同的在于它对与空队列的处理。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>About</title>
-      <link>https://team317.gitee.io/blog/about/</link>
+      <link>https://team317.gitee.io/about/</link>
       <pubDate>Tue, 25 Jan 2022 14:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/about/</guid>
+      <guid>https://team317.gitee.io/about/</guid>
       <description>Our website builds with Hugo static site generator and Mainroad theme. This demo allows you to see what Mainroad based website looks like before deciding to go with it. Just keep in mind that the current demo shows the basics, a small part of what the combination of Hugo and Mainroad can do.
 About Mainroad Mainroad is a responsive, simple, clean and content-focused Hugo theme based on the MH Magazine lite WordPress theme.</description>
     </item>
     
     <item>
       <title>正则表达式匹配强密码解析</title>
-      <link>https://team317.gitee.io/blog/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D%E5%BC%BA%E5%AF%86%E7%A0%81/</link>
+      <link>https://team317.gitee.io/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D%E5%BC%BA%E5%AF%86%E7%A0%81/</link>
       <pubDate>Fri, 10 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D%E5%BC%BA%E5%AF%86%E7%A0%81/</guid>
-      <description>密码要求：
-1 至少含有一个小写字母；
-2 至少含有一个大写字母；
-3 至少含有一个数字；
-4 至少含有一个特殊字符；
-5 密码长度要求八个字符及以上；
-^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#\$%\^&amp;amp;\*\(\)]).{8,} 这个正则表达式可以分成两个部分，分别为^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\!\@\#\$\%\^\&amp;amp;\*\(\)])和.{8,}，我们拆开分析。
-先看第一部分^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\!\@\#\$\%\^\&amp;amp;\*\(\)])，从左到右看，第一个字符是^，表示字符的开头，后面接着的是四个后行断言(?=.*[a-z])、(?=.*[A-Z])、(?=.*\d)、(?=.*[\!\@\#\$\%\^\&amp;amp;\*\(\)])，他们形式相似，先挑第一个进行分析。
-(?=.*[a-z])置于正则表达式^之后，表示在字符开头之后需要出现.*[a-z]才能匹配，而.*[a-z]表示需要出现小写字母。所以^(?=.*[a-z])表示在字符中需要出现一个小写字符。随后的三个断言的含义依次为：字符中要求出现一个大写字母、字符中要求出现一个数字、字符中要求出现一个特殊字符。组合起来即为：字符中要求出现小写字母，大写字母、一个数字、一个特殊字符。
-再看第二部分.{8,}，表示一个长度至少为8的任意字符。
-最后将两个部分组合起来，即为强密码的要求：要求出现一个小写字母、大写字符、数字和特殊字符，以及字符长度至少为8。这里有一点需要注意：^之后的后行断言所匹配的内容虽然在第一个部分中不会捕获，但是却可以被第二部分捕获。</description>
+      <guid>https://team317.gitee.io/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D%E5%BC%BA%E5%AF%86%E7%A0%81/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;密码要求：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1 至少含有一个小写字母；&lt;/p&gt;
+&lt;p&gt;2 至少含有一个大写字母；&lt;/p&gt;
+&lt;p&gt;3 至少含有一个数字；&lt;/p&gt;
+&lt;p&gt;4 至少含有一个特殊字符；&lt;/p&gt;
+&lt;p&gt;5 密码长度要求八个字符及以上；&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>刷题语言基础用法</title>
+      <link>https://team317.gitee.io/%E7%AE%97%E6%B3%95/%E5%88%B7%E9%A2%98%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://team317.gitee.io/%E7%AE%97%E6%B3%95/%E5%88%B7%E9%A2%98%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E7%94%A8%E6%B3%95/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;刷题建议&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;多练简单题，多练简单题，多练简单题。&lt;/p&gt;
+&lt;p&gt;中难题前期没必要练，因为基础不够，算法方面做好长期处于初级阶段的觉悟，因为算法的思路需要积累，不是学完数据结构就可以。&lt;/p&gt;
+&lt;p&gt;简单题也能提供很多解题技巧，把这些技巧学会了，再来挑战中难题也就有底子了。&lt;/p&gt;
+&lt;p&gt;前期挑战中难题浪费时间，而且心态容易崩。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>虚拟机读取映像文件</title>
-      <link>https://team317.gitee.io/blog/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AF%BB%E5%8F%96%E6%98%A0%E5%83%8F%E6%96%87%E4%BB%B6/</link>
+      <link>https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AF%BB%E5%8F%96%E6%98%A0%E5%83%8F%E6%96%87%E4%BB%B6/</link>
       <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AF%BB%E5%8F%96%E6%98%A0%E5%83%8F%E6%96%87%E4%BB%B6/</guid>
+      <guid>https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AF%BB%E5%8F%96%E6%98%A0%E5%83%8F%E6%96%87%E4%BB%B6/</guid>
       <description>&lt;p&gt;在使用VMware Player的时候，启动虚拟机时会出现下面的错误：
 &lt;img src=&#34;https://img-blog.csdnimg.cn/20210607083335996.png&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>C语言宏操作</title>
-      <link>https://team317.gitee.io/blog/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/c%E8%AF%AD%E8%A8%80%E5%AE%8F%E6%93%8D%E4%BD%9C/</link>
+      <title>C语言函数指针</title>
+      <link>https://team317.gitee.io/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/%E5%87%BD%E6%95%B0%E6%8C%87%E9%92%88/</link>
       <pubDate>Wed, 19 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/c%E8%AF%AD%E8%A8%80%E5%AE%8F%E6%93%8D%E4%BD%9C/</guid>
-      <description>&lt;h2 id=&#34;编译和宏&#34;&gt;编译和宏&lt;/h2&gt;
+      <guid>https://team317.gitee.io/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/%E5%87%BD%E6%95%B0%E6%8C%87%E9%92%88/</guid>
+      <description>&lt;h3 id=&#34;引入&#34;&gt;引入&lt;/h3&gt;
+&lt;p&gt;函数指针用的比较少，从上面的代码中可以感性的了解到&lt;strong&gt;函数指针和函数声明很相似&lt;/strong&gt;，不同的是&lt;strong&gt;函数指针的名字外面需要用括号括起来&lt;/strong&gt;，在python中函数可以当成变量放置在数组中进行调用，使用C语言函数指针，也可以达到同样的效果。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>C语言宏操作</title>
+      <link>https://team317.gitee.io/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/c%E8%AF%AD%E8%A8%80%E5%AE%8F%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Wed, 19 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://team317.gitee.io/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/c%E8%AF%AD%E8%A8%80%E5%AE%8F%E6%93%8D%E4%BD%9C/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;编译和宏&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;编译可分为两个阶段：编译和链接&lt;/p&gt;
 &lt;p&gt;step1:编译阶段进行语法检查&lt;/p&gt;
 &lt;p&gt;step2:链接阶段将各个相互关联的模块拼接在一起&lt;/p&gt;</description>
@@ -138,10 +156,10 @@ About Mainroad Mainroad is a responsive, simple, clean and content-focused Hugo 
     
     <item>
       <title>爬取和处理json数据</title>
-      <link>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E5%8F%96%E5%92%8C%E5%A4%84%E7%90%86json%E6%95%B0%E6%8D%AE/</link>
+      <link>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E5%8F%96%E5%92%8C%E5%A4%84%E7%90%86json%E6%95%B0%E6%8D%AE/</link>
       <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E5%8F%96%E5%92%8C%E5%A4%84%E7%90%86json%E6%95%B0%E6%8D%AE/</guid>
+      <guid>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E5%8F%96%E5%92%8C%E5%A4%84%E7%90%86json%E6%95%B0%E6%8D%AE/</guid>
       <description>&lt;p&gt;&lt;strong&gt;任务概述&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;爬取知乎中的推荐内容，输出每条推荐文章的链接和标题，
 或许可以使用获取html的方式来完成这个任务，不过这次主要想练一下json文件的爬取。&lt;/p&gt;</description>
@@ -149,41 +167,51 @@ About Mainroad Mainroad is a responsive, simple, clean and content-focused Hugo 
     
     <item>
       <title>ipconfig各个ip的含义</title>
-      <link>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/ipconfig%E5%90%84%E4%B8%AAip%E7%9A%84%E5%90%AB%E4%B9%89/</link>
+      <link>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/ipconfig%E5%90%84%E4%B8%AAip%E7%9A%84%E5%90%AB%E4%B9%89/</link>
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/ipconfig%E5%90%84%E4%B8%AAip%E7%9A%84%E5%90%AB%E4%B9%89/</guid>
+      <guid>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/ipconfig%E5%90%84%E4%B8%AAip%E7%9A%84%E5%90%AB%E4%B9%89/</guid>
       <description>&lt;p&gt;有时候在执行ipconfig时，会显示出多个ip，如果对网络不熟的话，可能会傻傻分不清，不知道这些ip都是什么意思。这里对比了不同网络条件下电脑的ip的变化，方便你分辨这些不同的ip。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>爬虫：设置手机代理</title>
-      <link>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E8%99%AB%E8%AE%BE%E7%BD%AE%E6%89%8B%E6%9C%BA%E4%BB%A3%E7%90%86/</link>
+      <link>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E8%99%AB%E8%AE%BE%E7%BD%AE%E6%89%8B%E6%9C%BA%E4%BB%A3%E7%90%86/</link>
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E8%99%AB%E8%AE%BE%E7%BD%AE%E6%89%8B%E6%9C%BA%E4%BB%A3%E7%90%86/</guid>
+      <guid>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/%E7%88%AC%E8%99%AB%E8%AE%BE%E7%BD%AE%E6%89%8B%E6%9C%BA%E4%BB%A3%E7%90%86/</guid>
       <description>&lt;h3 id=&#34;mitmproxy的安装&#34;&gt;mitmproxy的安装&lt;/h3&gt;
 &lt;p&gt;如果安装了anaconda，则在终端执行&lt;code&gt;pip install mitmproxy&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;安装后在目录下会增加三个可执行文件&lt;code&gt;mitmproxy.exe&lt;/code&gt;、&lt;code&gt;mitmdump.exe&lt;/code&gt;、&lt;code&gt;mitmweb.exe&lt;/code&gt;，为了能够在终端直接使用mitmdump命令，需将其文件路径添加到环境变量中，我的路径是&lt;code&gt;D:\InstallationLocation\Anaconda\envs\WebCrawler\Scripts&lt;/code&gt;，其中WebCrawler是我的虚拟环境。&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>用selenium抓取淘宝页面商品信息</title>
+      <link>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/%E7%94%A8selenium%E6%8A%93%E5%8F%96%E6%B7%98%E5%AE%9D%E9%A1%B5%E9%9D%A2%E5%95%86%E5%93%81%E4%BF%A1%E6%81%AF/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/%E7%94%A8selenium%E6%8A%93%E5%8F%96%E6%B7%98%E5%AE%9D%E9%A1%B5%E9%9D%A2%E5%95%86%E5%93%81%E4%BF%A1%E6%81%AF/</guid>
+      <description>&lt;h3 id=&#34;概述&#34;&gt;概述&lt;/h3&gt;
+&lt;p&gt;使用selenium登录淘宝并抓取关键字&amp;quot;iPad&amp;quot;对应页面的商品信息。&lt;/p&gt;
+&lt;p&gt;页面的抓取使用requests应该也能做到，这次的话使用selenium获取每一页的信息，然后用pyquery对页面信息进行处理。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>用pymysql操作mysql</title>
-      <link>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%94%A8pymysql%E6%93%8D%E4%BD%9Cmysql/</link>
+      <link>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/%E7%94%A8pymysql%E6%93%8D%E4%BD%9Cmysql/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%94%A8pymysql%E6%93%8D%E4%BD%9Cmysql/</guid>
+      <guid>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/%E7%94%A8pymysql%E6%93%8D%E4%BD%9Cmysql/</guid>
       <description>&lt;p&gt;在python中使用pymysql操作mysql数据库，代码和注释如下：&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>用C创建记录型文件</title>
-      <link>https://team317.gitee.io/blog/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/%E7%94%A8c%E5%88%9B%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%96%87%E4%BB%B6/</link>
+      <link>https://team317.gitee.io/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/%E7%94%A8c%E5%88%9B%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%96%87%E4%BB%B6/</link>
       <pubDate>Fri, 30 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/%E7%94%A8c%E5%88%9B%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%96%87%E4%BB%B6/</guid>
-      <description>&lt;p&gt;@[toc]&lt;/p&gt;
-&lt;h3 id=&#34;任务概述&#34;&gt;任务概述&lt;/h3&gt;
+      <guid>https://team317.gitee.io/c%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/%E7%94%A8c%E5%88%9B%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%96%87%E4%BB%B6/</guid>
+      <description>&lt;h3 id=&#34;任务概述&#34;&gt;任务概述&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;简单的创建一个记录型文件&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -191,21 +219,11 @@ About Mainroad Mainroad is a responsive, simple, clean and content-focused Hugo 
     </item>
     
     <item>
-      <title>知乎热榜爬取</title>
-      <link>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%9F%A5%E4%B9%8E%E7%83%AD%E6%A6%9C%E7%88%AC%E5%8F%96/</link>
-      <pubDate>Fri, 30 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://team317.gitee.io/blog/python%E7%AC%94%E8%AE%B0/%E7%9F%A5%E4%B9%8E%E7%83%AD%E6%A6%9C%E7%88%AC%E5%8F%96/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;任务概述&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;这次的任务是定时的爬取知乎热榜前十的标题，如果当前爬取的热榜较上一次有所变动，则将新增的标题打印出来。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>优先使用malloc创建链表节点</title>
-      <link>https://team317.gitee.io/blog/c&#43;&#43;%E7%AC%94%E8%AE%B0/%E4%BC%98%E5%85%88%E4%BD%BF%E7%94%A8malloc%E5%88%9B%E5%BB%BA%E9%93%BE%E8%A1%A8%E8%8A%82%E7%82%B9/</link>
+      <link>https://team317.gitee.io/c&#43;&#43;%E7%AC%94%E8%AE%B0/%E4%BC%98%E5%85%88%E4%BD%BF%E7%94%A8malloc%E5%88%9B%E5%BB%BA%E9%93%BE%E8%A1%A8%E8%8A%82%E7%82%B9/</link>
       <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/c&#43;&#43;%E7%AC%94%E8%AE%B0/%E4%BC%98%E5%85%88%E4%BD%BF%E7%94%A8malloc%E5%88%9B%E5%BB%BA%E9%93%BE%E8%A1%A8%E8%8A%82%E7%82%B9/</guid>
+      <guid>https://team317.gitee.io/c&#43;&#43;%E7%AC%94%E8%AE%B0/%E4%BC%98%E5%85%88%E4%BD%BF%E7%94%A8malloc%E5%88%9B%E5%BB%BA%E9%93%BE%E8%A1%A8%E8%8A%82%E7%82%B9/</guid>
       <description>&lt;h3 id=&#34;1链表节点的动态分配&#34;&gt;1、链表节点的动态分配&lt;/h3&gt;
 &lt;p&gt;在用一条打印语句打印链表节点值时，发现链表节点的信息发生了改变，见下图：
 &lt;!-- raw HTML omitted --&gt;
@@ -214,44 +232,50 @@ About Mainroad Mainroad is a responsive, simple, clean and content-focused Hugo 
     
     <item>
       <title>html分割与居中</title>
-      <link>https://team317.gitee.io/blog/htmlcssjs/html%E5%88%86%E5%89%B2%E4%B8%8E%E5%B1%85%E4%B8%AD/</link>
+      <link>https://team317.gitee.io/htmlcssjs/html%E5%88%86%E5%89%B2%E4%B8%8E%E5%B1%85%E4%B8%AD/</link>
       <pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/htmlcssjs/html%E5%88%86%E5%89%B2%E4%B8%8E%E5%B1%85%E4%B8%AD/</guid>
-      <description>不选中第一个元素 排版一个天气网站，下面这部分页面由四个li组成，需要在每个li左侧插入一条竖线作为分割（这条竖线是一张图片），要求第一个li的背景图中不能插入竖线，则需要选中除第一个li之外的其他li插入图片。 .weather_list{ margin:0 auto; text-align: center; } .weather_list li{ width: 240px; height: 240px; display: inline-block; } /* 选中除一个li之外的其他li */ .weather_list li:not(:first-child){ background: url(&amp;#34;../img/line.png&amp;#34;) no-repeat left; } 对比一下选中第一个li的选择器：
-.weather_list li:first-child 注意插入&amp;quot;:not&amp;quot;的位置，不然选择器会作废。
-用css插入图片 还是上面的这个页面，背景中需要插入竖线，要求用css完成，这个时候不能在html文件中使用img标签，可以通过在css文件中设置背景图片来实现：
-.weather_list li:not(:first-child){ background: url(&amp;#34;../img/line.png&amp;#34;) no-repeat left; } 在设置完url之后一般需要加上 &amp;quot; no-repeat &amp;quot; 防止因为图片大小尺寸不足以重复的方式铺满所在块。后面的left用于设定图片的位置。
-居中对齐 html中常常需要使用大量的对齐操作，最近学到两种居中对齐方式。
-一种是用margin:auto 自动对齐，这要求其父元素的宽高是固定好大小的，如其父元素大小为height:300px; width:400px; ，这个时候可以用margin对齐。水平居中用margin:0 auto，垂直居中用margin:auto 0 。 此外再记一下margin:30px 20px 25px 30px 设置的含义，这分别设置的是上、右、下、左四个方向的margin值。
-另一种对齐方式是使用text-align:center，这要求该元素的父元素是一个块级元素，可参考博客：CSS水平居中+垂直居中+水平/垂直居中的方法总结</description>
+      <guid>https://team317.gitee.io/htmlcssjs/html%E5%88%86%E5%89%B2%E4%B8%8E%E5%B1%85%E4%B8%AD/</guid>
+      <description>&lt;h3 id=&#34;选中第一个以外的元素&#34;&gt;选中第一个以外的元素&lt;/h3&gt;
+&lt;p&gt;排版一个天气网站，下面这部分页面由四个li组成，需要在每个li左侧插入一条竖线作为分割（这条竖线是一张图片），要求第一个li的背景图中不能插入竖线，则需要选中除第一个li之外的其他li插入图片。
+&lt;img src=&#34;https://img-blog.csdnimg.cn/20201002094047860.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0dvZE5vdEFNZW4=,size_16,color_FFFFFF,t_70#pic_center&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>汇编复制指定段</title>
-      <link>https://team317.gitee.io/blog/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E6%B1%87%E7%BC%96%E5%A4%8D%E5%88%B6%E6%8C%87%E4%BB%A4%E6%AE%B5/</link>
+      <link>https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E6%B1%87%E7%BC%96%E5%A4%8D%E5%88%B6%E6%8C%87%E4%BB%A4%E6%AE%B5/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E6%B1%87%E7%BC%96%E5%A4%8D%E5%88%B6%E6%8C%87%E4%BB%A4%E6%AE%B5/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;问题概述&lt;/strong&gt;
-下面的程序的功能是将“mov ax,4c00h”之前的指令复制到内存0:200处,补全程序。上机调试,跟踪运行结果。&lt;/p&gt;</description>
+      <guid>https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E6%B1%87%E7%BC%96%E5%A4%8D%E5%88%B6%E6%8C%87%E4%BB%A4%E6%AE%B5/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;问题概述&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;下面的程序的功能是将“mov ax,4c00h”之前的指令复制到内存0:200处,补全程序。上机调试,跟踪运行结果。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>计数二进制中1的位数</title>
+      <link>https://team317.gitee.io/%E7%AE%97%E6%B3%95/%E8%AE%A1%E6%95%B0%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E4%BD%8D%E6%95%B0/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://team317.gitee.io/%E7%AE%97%E6%B3%95/%E8%AE%A1%E6%95%B0%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E4%BD%8D%E6%95%B0/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;问题概述：&lt;/strong&gt; 从键盘上输入一个二进制数，统计其中1的位数并输出统计结果&lt;/p&gt;
+&lt;p&gt;C++实现过程中的关键：从键盘上得到的数据依变量类型存储为相应的类型，如果将输入类型定义为整型，则在读取中只会按十进制形式进行存储，如输入二进制数，读取到十进制变量中将变成所以用整型变量存储回使数据信息改变，在C++中，可以用字符串存储，定义一个string对象，用字符的方式处理。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Basic HTML Elements</title>
-      <link>https://team317.gitee.io/blog/post/basic-elements/</link>
+      <link>https://team317.gitee.io/post/basic-elements/</link>
       <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/post/basic-elements/</guid>
+      <guid>https://team317.gitee.io/post/basic-elements/</guid>
       <description>&lt;p&gt;The main purpose of this article is to make sure that all basic HTML Elements are decorated with CSS so as to not miss any possible elements when creating new themes for Hugo.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>(Hu)go Template Primer</title>
-      <link>https://team317.gitee.io/blog/post/hugo-template-primer/</link>
+      <link>https://team317.gitee.io/post/hugo-template-primer/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/post/hugo-template-primer/</guid>
+      <guid>https://team317.gitee.io/post/hugo-template-primer/</guid>
       <description>&lt;p&gt;Hugo uses the excellent &lt;a href=&#34;https://golang.org/&#34;&gt;Go&lt;/a&gt; &lt;a href=&#34;https://golang.org/pkg/html/template/&#34;&gt;html/template&lt;/a&gt; library for
 its template engine. It is an extremely lightweight engine that provides a very
 small amount of logic. In our experience that it is just the right amount of
@@ -262,10 +286,10 @@ similarities in Go templates.&lt;/p&gt;</description>
     
     <item>
       <title>Getting Started with Hugo</title>
-      <link>https://team317.gitee.io/blog/post/getting-started-with-hugo/</link>
+      <link>https://team317.gitee.io/post/getting-started-with-hugo/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/post/getting-started-with-hugo/</guid>
+      <guid>https://team317.gitee.io/post/getting-started-with-hugo/</guid>
       <description>Step 1. Install Hugo Go to Hugo releases and download the appropriate version for your OS and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at Install Hugo

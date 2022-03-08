@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>templates on Team317</title>
-    <link>https://team317.gitee.io/blog/tags/templates/</link>
+    <link>https://team317.gitee.io/tags/templates/</link>
     <description>Recent content in templates on Team317</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/blog/tags/templates/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/tags/templates/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>(Hu)go Template Primer</title>
-      <link>https://team317.gitee.io/blog/post/hugo-template-primer/</link>
+      <link>https://team317.gitee.io/post/hugo-template-primer/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://team317.gitee.io/blog/post/hugo-template-primer/</guid>
+      <guid>https://team317.gitee.io/post/hugo-template-primer/</guid>
       <description>&lt;p&gt;Hugo uses the excellent &lt;a href=&#34;https://golang.org/&#34;&gt;Go&lt;/a&gt; &lt;a href=&#34;https://golang.org/pkg/html/template/&#34;&gt;html/template&lt;/a&gt; library for
 its template engine. It is an extremely lightweight engine that provides a very
 small amount of logic. In our experience that it is just the right amount of
