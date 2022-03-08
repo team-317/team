@@ -19,7 +19,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   authorbox = true
   pager = true
   post_meta = ["date", "categories"] # Order of post meta information
-  mainSections = ["python笔记"]  # 这里所列文件夹中的内容将会展示在主页面上
+  mainSections = ["python笔记", "编程散记", "数据处理", "算法", "C语言笔记", "C++笔记", "html&css&js"]  # 这里所列文件夹中的内容将会展示在主页面上
 
 [Params.logo]
   subtitle = "欢迎访问我的博客空间" # Logo subtitle
@@ -47,3 +47,9 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 [[Params.widgets.social.custom]]
   title = "CSDN"
   url = "https://blog.csdn.net/GodNotAMen?type=blog"
+  icon = "csdn.svg"
+
+[[Params.widgets.social.custom]]
+  title = "知乎"
+  url = "https://www.zhihu.com/people/qiu-shui-wei-lan-95/posts"
+  icon = "zhihu.svg"

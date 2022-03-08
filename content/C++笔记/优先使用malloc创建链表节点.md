@@ -12,9 +12,12 @@ tags:
 ### 1、链表节点的动态分配
 
 在用一条打印语句打印链表节点值时，发现链表节点的信息发生了改变，见下图：
-<img src='https://img-blog.csdnimg.cn/20210309113131433.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0dvZE5vdEFNZW4=,size_16,color_FFFFFF,t_70'  width="60%"/>
-<img src="https://img-blog.csdnimg.cn/20210309113109678.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0dvZE5vdEFNZW4=,size_16,color_FFFFFF,t_70" width="60%"/>
+
+![](https://img-blog.csdnimg.cn/20210309113131433.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0dvZE5vdEFNZW4=,size_16,color_FFFFFF,t_70)
+
 <!--more-->
+![](https://img-blog.csdnimg.cn/20210309113109678.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0dvZE5vdEFNZW4=,size_16,color_FFFFFF,t_70)
+
 
 后来才知道在这之前调用了一个插入节点的函数Insert，这个节点的创建方式是直接通过`LNode node;`来创建的，这样做的结果是节点node为局部变量，当函数Insert结束后这个节点所在的空间将被释放。
 

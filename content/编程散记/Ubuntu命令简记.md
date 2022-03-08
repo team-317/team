@@ -1,7 +1,7 @@
 ---
 title: Ubuntu命令简记
 author: team317
-Date: 2022-03-08
+Date: 2020-11-09
 categories:  
   - "编程散记"
 tags:  
