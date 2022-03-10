@@ -23,6 +23,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [Params.logo]
   subtitle = "欢迎访问我的博客空间" # Logo subtitle
+  image = "img/_mountain climbing.png"
 
 [Params.sidebar]
   home = "right"   # Configure layout for home page
