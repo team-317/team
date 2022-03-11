@@ -54,3 +54,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   title = "知乎"
   url = "https://www.zhihu.com/people/qiu-shui-wei-lan-95/posts"
   icon = "zhihu.svg"
+
+
+[Params.style.vars]
+  highlightColor = "#0a79ce"  # 更改高亮颜色

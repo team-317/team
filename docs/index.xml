@@ -6,7 +6,7 @@
     <description>Recent content on Team317</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Queue的put、join和task_one</title>
       <link>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/queue%E7%9A%84putjoin%E5%92%8Ctask_one/</link>
@@ -25,6 +25,18 @@
       <guid>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/%E7%9F%A5%E4%B9%8E%E7%83%AD%E6%A6%9C%E7%88%AC%E5%8F%96/</guid>
       <description>&lt;p&gt;&lt;strong&gt;任务概述&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;这次的任务是定时的爬取知乎热榜前十的标题，如果当前爬取的热榜较上一次有所变动，则将新增的标题打印出来。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>python异步编程</title>
+      <link>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/python%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/python%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;本篇blog所讨论的问题：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1.python异步编程的过程&lt;/p&gt;
+&lt;p&gt;2.python异步编程和多线程编程的区别&lt;/p&gt;
+&lt;p&gt;3.python异步程序在notebook中的运行问题&lt;/p&gt;</description>
     </item>
     
     <item>
