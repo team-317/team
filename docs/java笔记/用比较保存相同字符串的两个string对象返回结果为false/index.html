@@ -8,11 +8,11 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="用==比较保存相同字符串的两个String对象，返回结果为false" />
-<meta property="og:description" content="在Java中编写如下代码：
+<meta property="og:description" content="在下面的代码中，str1和str2中保存相同的字符串&quot;hello&quot;，但最终输出结果为Is str1==str2: false，为什么==的操作结果返回为false？这个问题并不难，但可以把一些知识点串联起来。
 String str1 = &#34;hello&#34;;
 String str2 = &#34;hello&#34;;
-System.out.println(&#34;Is str1==str2:&#34;, str1==str2);
-输出结果为Is str1==str2:false，str1和str2中保存的字符串是相同的，但为什么两个对象却并不相等？这个问题并不难，但可以把一些知识点串联起来。" />
+System.out.println(&#34;Is str1==str2: &#34;, str1==str2);
+" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://team317.gitee.io/java%E7%AC%94%E8%AE%B0/%E7%94%A8%E6%AF%94%E8%BE%83%E4%BF%9D%E5%AD%98%E7%9B%B8%E5%90%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E4%B8%A4%E4%B8%AAstring%E5%AF%B9%E8%B1%A1%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%9C%E4%B8%BAfalse/" /><meta property="article:section" content="Java笔记" />
 <meta property="article:published_time" content="2022-03-17T00:00:00+00:00" />
@@ -62,12 +62,11 @@ System.out.println(&#34;Is str1==str2:&#34;, str1==str2);
 </div></div>
 		</header>
 		<div class="content post__content clearfix">
-			<p>在Java中编写如下代码：</p>
+			<p>在下面的代码中，<code>str1</code>和<code>str2</code>中保存相同的字符串&quot;hello&quot;，但最终输出结果为<code>Is str1==str2: false</code>，为什么==的操作结果返回为<code>false</code>？这个问题并不难，但可以把一些知识点串联起来。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">String str1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello&#34;</span><span style="color:#f92672">;</span>
 String str2 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello&#34;</span><span style="color:#f92672">;</span>
-System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Is str1==str2:&#34;</span><span style="color:#f92672">,</span> str1<span style="color:#f92672">==</span>str2<span style="color:#f92672">);</span>
-</code></pre></div><p>输出结果为<code>Is str1==str2:false</code>，<code>str1</code>和<code>str2</code>中保存的字符串是相同的，但为什么两个对象却并不相等？这个问题并不难，但可以把一些知识点串联起来。</p>
-<p><code>Java</code>中的字符串存放在公共的存储池中，每个字符串都是不可变的的，在存储池中只保存一份，所以在上面的代码中，<code>str1</code>和<code>str2</code>保存的同一份的字符串，那么为什么<code>str1==str2</code>的结果依然为<code>false</code>呢？</p>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Is str1==str2: &#34;</span><span style="color:#f92672">,</span> str1<span style="color:#f92672">==</span>str2<span style="color:#f92672">);</span>
+</code></pre></div><p><code>Java</code>中的字符串存放在公共的存储池中，每个字符串都是不可变的的，在存储池中只保存一份，所以在上面的代码中，<code>str1</code>和<code>str2</code>保存的同一份的字符串，那么为什么<code>str1==str2</code>的结果依然为<code>false</code>呢？</p>
 <p>首先从<code>==</code>运算符入手，<code>==</code>用来比较两个变量中保存的值是否相同，由于<code>Java</code>中不允许用户重载运算符，所以<code>==</code>的含义不会改变，在<code>str1==str2</code>中会比较<code>str1</code>和<code>str2</code>中保存的值是否相同。乍一看，<code>str1</code>和<code>str2</code>保存同一份字符串，两者的值一定是相同的。</p>
 <p>理解这个问题的关键是<strong>区分实例字段的值和类变量的值。</strong></p>
 <p><code>Java</code>中的变量可分为两类，一类是基本类型变量，这类变量中存放的是值；另一类是类变量，用于保存非基本类型创建的引用，可以理解为对象的位置。</p>
@@ -214,6 +213,13 @@ System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span>
 			<a class="widget-social__link widget__link btn" title="知乎" rel="noopener noreferrer" href="https://www.zhihu.com/people/qiu-shui-wei-lan-95/posts" target="_blank">
 					<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1646703887028" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2079" width="30" height="16" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"></style></defs><path d="M576.8 807.52h57.28l20.8 72.48 100.8-72.48h141.92V229.28H576.8z m67.84-513.92H832v448h-66.24l-85.12 64.96-18.56-64.96h-17.44zM126.4 884.48a149.44 149.44 0 0 0 123.84-10.4c60.96-36 105.92-194.56 105.92-194.56l144 177.44s13.12-84.48-2.24-108.32-99.04-119.84-99.04-119.84l-36.64 32 26.08-104.96H544s0-61.76-30.56-65.28-125.44 0-125.44 0v-192H528s-1.6-64-28.8-64H270.56l35.52-104.64s-57.6 3.36-77.92 39.36-86.4 221.6-86.4 221.6 21.92 10.24 59.2-17.28a147.68 147.68 0 0 0 49.28-75.52l67.84-3.36L320 491.2s-116.96-1.76-140.64 0-37.28 65.28-37.28 65.28H320s-15.2 108.16-60.96 187.2-132.64 140.8-132.64 140.8z" fill="#49C0FB" p-id="2080"></path></svg>
 				<span>知乎</span>
+			</a>
+		</div>
+		
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Gitee" rel="noopener noreferrer" href="https://gitee.com/team317" target="_blank">
+					<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1647517716559" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1578" width="30" height="16" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"></style></defs><path d="M512 1024C229.222 1024 0 794.778 0 512S229.222 0 512 0s512 229.222 512 512-229.222 512-512 512z m259.149-568.883h-290.74a25.293 25.293 0 0 0-25.292 25.293l-0.026 63.206c0 13.952 11.315 25.293 25.267 25.293h177.024c13.978 0 25.293 11.315 25.293 25.267v12.646a75.853 75.853 0 0 1-75.853 75.853h-240.23a25.293 25.293 0 0 1-25.267-25.293V417.203a75.853 75.853 0 0 1 75.827-75.853h353.946a25.293 25.293 0 0 0 25.267-25.292l0.077-63.207a25.293 25.293 0 0 0-25.268-25.293H417.152a189.62 189.62 0 0 0-189.62 189.645V771.15c0 13.977 11.316 25.293 25.294 25.293h372.94a170.65 170.65 0 0 0 170.65-170.65V480.384a25.293 25.293 0 0 0-25.293-25.267z" fill="#C71D23" p-id="1579"></path></svg>
+				<span>Gitee</span>
 			</a>
 		</div>
 		

@@ -55,6 +55,10 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   url = "https://www.zhihu.com/people/qiu-shui-wei-lan-95/posts"
   icon = "zhihu.svg"
 
+[[Params.widgets.social.custom]]
+  title = "Gitee"
+  url = "https://gitee.com/team317"
+  icon = "gitee.svg"
 
 [Params.style.vars]
   highlightColor = "#0a79ce"  # 更改高亮颜色

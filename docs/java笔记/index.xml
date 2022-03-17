@@ -13,11 +13,11 @@
       <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://team317.gitee.io/java%E7%AC%94%E8%AE%B0/%E7%94%A8%E6%AF%94%E8%BE%83%E4%BF%9D%E5%AD%98%E7%9B%B8%E5%90%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E4%B8%A4%E4%B8%AAstring%E5%AF%B9%E8%B1%A1%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%9C%E4%B8%BAfalse/</guid>
-      <description>&lt;p&gt;在Java中编写如下代码：&lt;/p&gt;
+      <description>&lt;p&gt;在下面的代码中，&lt;code&gt;str1&lt;/code&gt;和&lt;code&gt;str2&lt;/code&gt;中保存相同的字符串&amp;quot;hello&amp;quot;，但最终输出结果为&lt;code&gt;Is str1==str2: false&lt;/code&gt;，为什么==的操作结果返回为&lt;code&gt;false&lt;/code&gt;？这个问题并不难，但可以把一些知识点串联起来。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;String str1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hello&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
 String str2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hello&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-System&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Is str1==str2:&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; str1&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;str2&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;输出结果为&lt;code&gt;Is str1==str2:false&lt;/code&gt;，&lt;code&gt;str1&lt;/code&gt;和&lt;code&gt;str2&lt;/code&gt;中保存的字符串是相同的，但为什么两个对象却并不相等？这个问题并不难，但可以把一些知识点串联起来。&lt;/p&gt;</description>
+System&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Is str1==str2: &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; str1&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;str2&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
   </channel>

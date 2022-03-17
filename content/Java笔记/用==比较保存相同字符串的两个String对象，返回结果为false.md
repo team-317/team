@@ -7,15 +7,13 @@ categories:
 tags:  
   - "Java"
 ---
-
-在Java中编写如下代码：
+在下面的代码中，`str1`和`str2`中保存相同的字符串"hello"，但最终输出结果为`Is str1==str2: false`，为什么==的操作结果返回为`false`？这个问题并不难，但可以把一些知识点串联起来。
 ```java
 String str1 = "hello";
 String str2 = "hello";
-System.out.println("Is str1==str2:", str1==str2);
+System.out.println("Is str1==str2: ", str1==str2);
 ```
-输出结果为`Is str1==str2:false`，`str1`和`str2`中保存的字符串是相同的，但为什么两个对象却并不相等？这个问题并不难，但可以把一些知识点串联起来。<!--more-->
-
+<!--more-->
 `Java`中的字符串存放在公共的存储池中，每个字符串都是不可变的的，在存储池中只保存一份，所以在上面的代码中，`str1`和`str2`保存的同一份的字符串，那么为什么`str1==str2`的结果依然为`false`呢？
 
 首先从`==`运算符入手，`==`用来比较两个变量中保存的值是否相同，由于`Java`中不允许用户重载运算符，所以`==`的含义不会改变，在`str1==str2`中会比较`str1`和`str2`中保存的值是否相同。乍一看，`str1`和`str2`保存同一份字符串，两者的值一定是相同的。
