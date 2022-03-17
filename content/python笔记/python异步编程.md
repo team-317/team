@@ -9,12 +9,9 @@ tags:
   - "python"
 ---
 
-**本篇blog所讨论的问题：**
-
-1.python异步编程的过程
-
-2.python异步编程和多线程编程的区别
-
+**问题记录：**  
+1.python异步编程的过程  
+2.python异步编程和多线程编程的区别  
 3.python异步程序在notebook中的运行问题<!--more-->
 
 ### python异步编程的过程
