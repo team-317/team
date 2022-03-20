@@ -67,17 +67,19 @@ HashMap<span style="color:#f92672">&lt;</span>Character<span style="color:#f9267
 <span style="color:#f92672">}</span>
 </code></pre></div><p>理解这个问题有两个关键点，一是==操作符的含义，二是Java包装类的装箱和拆箱。</p>
 <p>对于基本类型，==用于比较两个变量的值，而对于对象变量，==用来判断两个对象变量是否指向同一个变量，即是否引用同一个变量。在这里<code>get</code>方法返回的是<code>Integer</code>对象，所以应该会比较两个返回对象是否相同。但考虑到Java的<code>Integer</code>会进行拆箱操作，所以起初我认为<code>get</code>方法返回<code>Integer</code>对象后会拆箱为两个整数值。</p>
-<p>对于Java包装类的装箱和拆箱，有一个陷阱，查看Java用<code>valueOf</code>进行拆箱的源码:</p>
+<p>对于Java包装类的装箱和拆箱，有一个特点，查看Java用<code>valueOf</code>进行拆箱的源码:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Java" data-lang="Java"><span style="color:#a6e22e">@HotSpotIntrinsicCandidate</span>
 <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> Integer <span style="color:#a6e22e">valueOf</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>i <span style="color:#f92672">&gt;=</span> IntegerCache<span style="color:#f92672">.</span><span style="color:#a6e22e">low</span> <span style="color:#f92672">&amp;&amp;</span> i <span style="color:#f92672">&lt;=</span> IntegerCache<span style="color:#f92672">.</span><span style="color:#a6e22e">high</span><span style="color:#f92672">)</span>    <span style="color:#75715e">//low=-127 high=128
-</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">return</span> IntegerCache<span style="color:#f92672">.</span><span style="color:#a6e22e">cache</span><span style="color:#f92672">[</span>i <span style="color:#f92672">+</span> <span style="color:#f92672">(-</span>IntegerCache<span style="color:#f92672">.</span><span style="color:#a6e22e">low</span><span style="color:#f92672">)];</span>
+    <span style="color:#75715e">//low=-128 high=127(default)
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>i <span style="color:#f92672">&gt;=</span> IntegerCache<span style="color:#f92672">.</span><span style="color:#a6e22e">low</span> <span style="color:#f92672">&amp;&amp;</span> i <span style="color:#f92672">&lt;=</span> IntegerCache<span style="color:#f92672">.</span><span style="color:#a6e22e">high</span><span style="color:#f92672">)</span>
+        <span style="color:#66d9ef">return</span> IntegerCache<span style="color:#f92672">.</span><span style="color:#a6e22e">cache</span><span style="color:#f92672">[</span>i <span style="color:#f92672">+</span> <span style="color:#f92672">(-</span>IntegerCache<span style="color:#f92672">.</span><span style="color:#a6e22e">low</span><span style="color:#f92672">)];</span>
     <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Integer<span style="color:#f92672">(</span>i<span style="color:#f92672">);</span>
 <span style="color:#f92672">}</span>
-</code></pre></div><p>可以看到，当i的值在[-127, 128]时，会返回一个整数值，否则，会返回一个<code>Integer</code>对象。而返回<code>Integer</code>对象。此时通过==运算符比较的是两个对象是否是同一个对象。</p>
-<p>在vscode中进行调试，当a=127,b=127时，a和b指向的是同一个对象，两者的记号均为9：</p>
+</code></pre></div><p><code>IntegerCache.cache</code>是一个<code>Integer</code>型数组，当i的值在[-128, 127]时，会从chche中返回<code>Integer</code>对象，所以取值在[-128,127]中的<code>Integer</code>对象都来自<code>IntegerCache.cache</code>。这时，如果两个对象变量的取值相同，则它们共享同一个<code>Integer</code>对象。此时通过==运算符比较的是同一个对象。</p>
+<p>在这个范围之外，会新建并返回一个<code>Integer</code>对象，此时即使两个对象的值相同，它们也是不同的对象，所以通过==运算符得到的结果为false。</p>
+<p>当a=127,b=127时，a和b的对象均来自于<code>IntegerCache.cache</code>，所以两者指向同一个对象。在vscode中调试结果如下，两者的记号均为9：</p>
 <p><img src="https://gitee.com/Team317/pictures/raw/master/images/20220320174036.png" alt=""></p>
-<p>当a=128,b=128时，a和b指向的不是同一个对象，一个记号为9，另一个为10：</p>
+<p>当a=128,b=128时，a和b直接由<code>new Integer()</code>创建，形成两个不同的对象。在vscode中调试时，一个记号为9，另一个为10：</p>
 <p><img src="https://gitee.com/Team317/pictures/raw/master/images/20220320173319.png" alt=""></p>
 <p><strong>所以对于非基本类型以及基本类型对应的包装类，在比较其两个对象是否相同时，都应该使用equals方法。</strong></p>
 		</div>
