@@ -6,7 +6,16 @@
     <description>Recent content in Java笔记s on Team317</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/java%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/java%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java基本类型的包装器</title>
+      <link>https://team317.gitee.io/java%E7%AC%94%E8%AE%B0/java%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%8C%85%E8%A3%85%E5%99%A8/</link>
+      <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://team317.gitee.io/java%E7%AC%94%E8%AE%B0/java%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%8C%85%E8%A3%85%E5%99%A8/</guid>
+      <description>&lt;p&gt;问题来自下面这段代码，哈希字典windows和needs的键值对意为&amp;quot;字符：该字符出现的次数&amp;quot;，if语句用于判断字符ch在windows和needs中的值是否相同。当这个值比较小时，if语句能够正常给出判断。但当这个值比较大时，例如为10000，即使两者相等，if判断给出的结果也为false。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>用==比较保存相同字符串的两个String对象，返回结果为false</title>
       <link>https://team317.gitee.io/java%E7%AC%94%E8%AE%B0/%E7%94%A8%E6%AF%94%E8%BE%83%E4%BF%9D%E5%AD%98%E7%9B%B8%E5%90%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E4%B8%A4%E4%B8%AAstring%E5%AF%B9%E8%B1%A1%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%9C%E4%B8%BAfalse/</link>
