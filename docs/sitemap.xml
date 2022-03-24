@@ -8,8 +8,27 @@
     <loc>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/%E7%9F%A5%E4%B9%8E%E7%83%AD%E6%A6%9C%E7%88%AC%E5%8F%96/</loc>
     <lastmod>2021-04-30T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://team317.gitee.io/</loc>
+    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url><url>
     <loc>https://team317.gitee.io/categories/</loc>
-    <lastmod>2022-03-20T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://team317.gitee.io/tags/</loc>
+    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://team317.gitee.io/tags/vim/</loc>
+    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/vim%E6%89%8B%E5%86%8C/</loc>
+    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://team317.gitee.io/categories/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/</loc>
+    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/</loc>
+    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://team317.gitee.io/tags/java/</loc>
     <lastmod>2022-03-20T00:00:00+00:00</lastmod>
@@ -21,12 +40,6 @@
     <lastmod>2022-03-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://team317.gitee.io/java%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2022-03-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://team317.gitee.io/tags/</loc>
-    <lastmod>2022-03-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://team317.gitee.io/</loc>
     <lastmod>2022-03-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://team317.gitee.io/java%E7%AC%94%E8%AE%B0/%E7%94%A8%E6%AF%94%E8%BE%83%E4%BF%9D%E5%AD%98%E7%9B%B8%E5%90%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E4%B8%A4%E4%B8%AAstring%E5%AF%B9%E8%B1%A1%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%9C%E4%B8%BAfalse/</loc>
@@ -51,12 +64,6 @@
     <lastmod>2022-03-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E7%94%A8hugo%E5%92%8Cgitee-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2022-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://team317.gitee.io/categories/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/</loc>
-    <lastmod>2022-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/</loc>
     <lastmod>2022-03-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://team317.gitee.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
@@ -181,5 +188,7 @@
   </url><url>
     <loc>https://team317.gitee.io/%E7%AE%97%E6%B3%95/%E8%AE%A1%E6%95%B0%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E4%BD%8D%E6%95%B0/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/vimtutor_summary/</loc>
   </url>
 </urlset>

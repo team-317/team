@@ -6,7 +6,7 @@
     <description>Recent content on Team317</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Queue的put、join和task_one</title>
       <link>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/queue%E7%9A%84putjoin%E5%92%8Ctask_one/</link>
@@ -25,6 +25,15 @@
       <guid>https://team317.gitee.io/python%E7%AC%94%E8%AE%B0/%E7%9F%A5%E4%B9%8E%E7%83%AD%E6%A6%9C%E7%88%AC%E5%8F%96/</guid>
       <description>&lt;p&gt;&lt;strong&gt;任务概述&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;这次的任务是定时的爬取知乎热榜前十的标题，如果当前爬取的热榜较上一次有所变动，则将新增的标题打印出来。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>vim光标操作</title>
+      <link>https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/vim%E6%89%8B%E5%86%8C/</link>
+      <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/vim%E6%89%8B%E5%86%8C/</guid>
+      <description>&lt;p&gt;在没有鼠标的情况下，vim会是一款很不错的编辑工具，刚接触vim的时候我很不适应，编辑文件的时候总是离不开鼠标，今天学了vimtutor，发现vim的设计很不错，在没有鼠标的情况下，也能很好的完成编辑任务，当用熟练后，或许其效率也不输给鼠标+键盘的方式。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -258,6 +267,15 @@ System&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#3
       <guid>https://team317.gitee.io/%E7%AE%97%E6%B3%95/%E8%AE%A1%E6%95%B0%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E4%BD%8D%E6%95%B0/</guid>
       <description>&lt;p&gt;&lt;strong&gt;问题概述：&lt;/strong&gt; 从键盘上输入一个二进制数，统计其中1的位数并输出统计结果&lt;/p&gt;
 &lt;p&gt;C++实现过程中的关键：从键盘上得到的数据依变量类型存储为相应的类型，如果将输入类型定义为整型，则在读取中只会按十进制形式进行存储，如输入二进制数，读取到十进制变量中将变成所以用整型变量存储回使数据信息改变，在C++中，可以用字符串存储，定义一个string对象，用字符的方式处理。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/vimtutor_summary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/vimtutor_summary/</guid>
+      <description>================================================================================ W e l c o m e t o t h e V I M T u t o r - Version 1.7 ================================================================================Vim is a very powerful editor that has many commands, too many toexplain in a tutor such as this. This tutor is designed to describeenough of the commands that you will be able to easily use Vim asan all-purpose editor.The approximate time required to complete the tutor is 25-30 minutes,depending upon how much time is spent with experimentation.</description>
     </item>
     
   </channel>

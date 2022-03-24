@@ -4,13 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>正则表达式 - Team317</title>
+	<title>vim光标操作 - Team317</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="正则表达式" />
-<meta property="og:description" content="John Doe&#39;s Personal blog about everything" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://team317.gitee.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" />
+		<meta property="og:title" content="vim光标操作" />
+<meta property="og:description" content="在没有鼠标的情况下，vim会是一款很不错的编辑工具，刚接触vim的时候我很不适应，编辑文件的时候总是离不开鼠标，今天学了vimtutor，发现vim的设计很不错，在没有鼠标的情况下，也能很好的完成编辑任务，当用熟练后，或许其效率也不输给鼠标&#43;键盘的方式。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/vim%E6%89%8B%E5%86%8C/" /><meta property="article:section" content="编程散记" />
+<meta property="article:published_time" content="2022-03-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-03-24T00:00:00+00:00" />
 
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +22,6 @@
 
 	<link rel="stylesheet" href="/css/style.css">
 	
-	<link rel="alternate" type="application/rss+xml" href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/index.xml" title="Team317">
 
 	<link rel="shortcut icon" href="/favicon.ico">
 		
@@ -46,65 +47,63 @@
 		<div class="wrapper flex">
 			<div class="primary">
 			
-<main class="main list" role="main">
-	<header class="main__header">
-		<h1 class="main__title">正则表达式</h1>
-	</header><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D%E5%BC%BA%E5%AF%86%E7%A0%81/" rel="bookmark">
-			正则表达式匹配强密码解析
-			</a>
-		</h2>
-		<div class="list__meta meta">
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">vim光标操作</h1>
+			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-12-10T00:00:00Z">December 10, 2021</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/" rel="category">数据处理</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-03-24T00:00:00Z">March 24, 2022</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/" rel="category">编程散记</a>
 	</span>
 </div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		<p><strong>密码要求：</strong></p>
-<p>1 至少含有一个小写字母；</p>
-<p>2 至少含有一个大写字母；</p>
-<p>3 至少含有一个数字；</p>
-<p>4 至少含有一个特殊字符；</p>
-<p>5 密码长度要求八个字符及以上；</p>
-	</div>
-	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D%E5%BC%BA%E5%AF%86%E7%A0%81/">Read more…</a>
-	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%B0%8F%E7%BB%93/" rel="bookmark">
-			正则表达式小结
-			</a>
-		</h2>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-12-05T00:00:00Z">December 05, 2021</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/" rel="category">数据处理</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		<p><strong>正则表达式的重复次数</strong></p>
-<ul>
-<li>?(0次或1次):可以这么理解，“？”表示“要不要重复”，那结果就只能是“要(1次)”和“不要(0次)”</li>
-<li>+(1次或多次):可以理解为重复次数加n，n取(0，n)，但由于本身匹配一次，所以至少会重复一次。</li>
-</ul>
-	</div>
-	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%B0%8F%E7%BB%93/">Read more…</a>
-	</div>
-</article>
+		</header>
+		<div class="content post__content clearfix">
+			<p>在没有鼠标的情况下，vim会是一款很不错的编辑工具，刚接触vim的时候我很不适应，编辑文件的时候总是离不开鼠标，今天学了vimtutor，发现vim的设计很不错，在没有鼠标的情况下，也能很好的完成编辑任务，当用熟练后，或许其效率也不输给鼠标+键盘的方式。</p>
+<p>在使用vim时首先要处理的是翻页和移动光标的问题，毕竟浏览文件总是要需要查看文件的不同部分。vim中可以用上下左右四个键来移动光标，也可以用kjhl四个键来进行移动，其中j对应向下移动光标，是最常用的，在键盘上的位置也是最常按的。不过这些操作每次只能移动一个字符，不那么方便。</p>
+<p>可以采用<code>数字+操作</code>的组合方式进行移动，比如<code>999l</code>可以往右移动999个字符（l向下移动光标），这一般就到达行末了（如果要移动到行首可以直接按0）。另外可以通过w、e、b在单词之间快速移动。</p>
+<p>通过<code>CTRL-G</code>会在窗口下方显示当前所在行和文件的总行数，再由<code>数字+G</code>的方式可以定位到和数字相对应的行。</p>
+<p>需要注意的是，上面所有这些操作都是在<code>Normal Mode</code>中进行的，也就是按下<!-- raw HTML omitted -->后进入的模式。如果需要编辑，可以按A、a或i进入<code>Insert Mode</code>。</p>
+<p>vim中提供了快速入门的手册vimtutor，在命令行中直接输入即可查看，这份手册介绍了最常用的命令，并且是&quot;实践+学习&quot;方式的，跟着这份手册可以很快入门vim，这次博客也是我看完这份手册后第一次用vim进行编写的。</p>
+<p>vimtutor一共有7节，每节下面分若干小节，每节的末尾有一个总结，我为了方便下次查阅把这七个小节记录到了文件<a href="/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/vimtutor_summary/">vimtutor SUMMARY</a>中。</p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/vim/" rel="tag">vim</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
 </main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Team317 avatar" src="/img/profile.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Team317</span>
+	</div>
+	<div class="authorbox__description">
+		所有事物都在发展，每个人都在不断成长，我也在向前推进着。
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/%E7%94%A8hugo%E5%92%8Cgitee-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">用hugo和Gitee Pages搭建个人博客</p>
+		</a>
+	</div>
+</nav>
 
 
 			</div>
-			
-<aside class="sidebar"><div class="widget-search widget">
+			<aside class="sidebar"><div class="widget-search widget">
 	<form class="widget-search__form" role="search" method="get" action="https://duckduckgo.com/">
 		<label>
 			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">

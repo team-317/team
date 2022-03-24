@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vim on Team317</title>
+    <link>https://team317.gitee.io/tags/vim/</link>
+    <description>Recent content in vim on Team317</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vim光标操作</title>
+      <link>https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/vim%E6%89%8B%E5%86%8C/</link>
+      <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/vim%E6%89%8B%E5%86%8C/</guid>
+      <description>&lt;p&gt;在没有鼠标的情况下，vim会是一款很不错的编辑工具，刚接触vim的时候我很不适应，编辑文件的时候总是离不开鼠标，今天学了vimtutor，发现vim的设计很不错，在没有鼠标的情况下，也能很好的完成编辑任务，当用熟练后，或许其效率也不输给鼠标+键盘的方式。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

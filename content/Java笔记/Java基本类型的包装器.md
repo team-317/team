@@ -26,7 +26,7 @@ if(windows.get(ch) == needs.get(ch)){
 ```Java
 @HotSpotIntrinsicCandidate
 public static Integer valueOf(int i) {
-    //low=-128 high=127(default)
+    //low=-128，high默认为127，可以改变
     if (i >= IntegerCache.low && i <= IntegerCache.high)
         return IntegerCache.cache[i + (-IntegerCache.low)];
     return new Integer(i);
