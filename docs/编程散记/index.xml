@@ -6,7 +6,16 @@
     <description>Recent content in 编程散记s on Team317</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PDF阅读</title>
+      <link>https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/pdf%E9%98%85%E8%AF%BB%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/pdf%E9%98%85%E8%AF%BB%E6%96%B9%E5%BC%8F/</guid>
+      <description>&lt;p&gt;相比于纸质书籍的阅读，PDF的阅读方式有很多优势，其中最重要的是获取途径便捷快速。通过网络搜索能快速的找到想要的电子书，这能节省很多时间。我不得不承认，在获取这些电子书的过程中，我间接的助长了盗版电子书的传播，有些书写的很不错，作者理应从他的读者中获取收益。但另一方面，如果放着网络中廉价易得的电子书不用，而非得花更多的金钱去购买正本电子书，那我未免过于耿直了。最好的方式就是在挣了足够的金钱后再去购买一份正版书，作为对作者的支持。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>vim光标操作</title>
       <link>https://team317.gitee.io/%E7%BC%96%E7%A8%8B%E6%95%A3%E8%AE%B0/vim%E6%89%8B%E5%86%8C/</link>

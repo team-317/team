@@ -29,8 +29,8 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   home = "right"   # Configure layout for home page
   list = "right"   # Configure layout for list pages
   single = "right" # Configure layout for single pages
-  # Enable widgets in given order
-  widgets = ["ddg-search", "recent", "categories", "taglist", "social", "languages"]
+  # Enable widgets in given order 可以增加"recent"以显示最近的文章
+  widgets = ["search", "categories", "taglist", "social", "languages"]
 
 
 
