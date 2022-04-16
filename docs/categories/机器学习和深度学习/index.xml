@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>机器学习和深度学习 on Team317</title>
+    <link>https://team317.gitee.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%92%8C%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</link>
+    <description>Recent content in 机器学习和深度学习 on Team317</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://team317.gitee.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%92%8C%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://team317.gitee.io/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%92%8C%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%9F%A9%E9%98%B5%E6%B1%82%E5%AF%BC/</link>
+      <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://team317.gitee.io/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%92%8C%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%9F%A9%E9%98%B5%E6%B1%82%E5%AF%BC/</guid>
+      <description>&lt;p&gt;很多机器学习算法都需要求解最值，比如最小二乘法求解样本空间相对拟合曲线的最短距离，最值的求解往往通过求导来计算，而机器学习中又常用矩阵来处理数据，所以很多时候会涉及到矩阵的求导。矩阵求导就像是线性代数和微积分的结合，但两者结合后规则又有些不同。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
